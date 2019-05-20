@@ -1,0 +1,34 @@
+class testers.A extends java.lang.Object
+{
+
+    public void foo()
+    {
+        testers.A this;
+
+        this := @this: testers.A;
+
+        virtualinvoke this.<testers.A: void bar()>();
+
+        return;
+    }
+
+    public void bar()
+    {
+        testers.A this;
+
+        this := @this: testers.A;
+
+        return;
+    }
+
+    void <init>()
+    {
+        testers.A this;
+
+        this := @this: testers.A;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

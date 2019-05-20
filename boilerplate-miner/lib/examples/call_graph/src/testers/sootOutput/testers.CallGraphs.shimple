@@ -1,0 +1,38 @@
+public class testers.CallGraphs extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        staticinvoke <testers.CallGraphs: void doStuff()>();
+
+        return;
+    }
+
+    public static void doStuff()
+    {
+        testers.A temp$0;
+
+        temp$0 = new testers.A;
+
+        specialinvoke temp$0.<testers.A: void <init>()>();
+
+        virtualinvoke temp$0.<testers.A: void foo()>();
+
+        return;
+    }
+
+    public void <init>()
+    {
+        testers.CallGraphs this;
+
+        this := @this: testers.CallGraphs;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

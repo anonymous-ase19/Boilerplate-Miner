@@ -1,0 +1,937 @@
+========== INTERESTING SEQUENCE MINING ============
+ Time: 04.01.2019-15:28:20
+ Inputs: -f /var/folders/td/vcpk72955fv6hj5k_v107y6w0000gn/T/APICallDB3886102286481023767.txt -s 100000 -i 1000 -r 4320 Finished bulding priority queue. Size: 113
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 211
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 227
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 240
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 263
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 244
+ Number of eval calls: 5
+ Finished bulding priority queue. Size: 234
+ Number of eval calls: 18
+ Finished bulding priority queue. Size: 214
+ Number of eval calls: 10
+ Finished bulding priority queue. Size: 204
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 202
+ Number of eval calls: 11
+ Finished bulding priority queue. Size: 190
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 189
+ Number of eval calls: 20
+ Finished bulding priority queue. Size: 166
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 163
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 165
+ Number of eval calls: 4
+ Finished bulding priority queue. Size: 161
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 153
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 150
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 143
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 141
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 153
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 148
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 146
+ Number of eval calls: 9
+ Finished bulding priority queue. Size: 132
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 139
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 140
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 137
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 130
+ Number of eval calls: 12
+ Finished bulding priority queue. Size: 111
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 117
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 117
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 115
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 113
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 107
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 106
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 105
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 99
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 92
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 91
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 84
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 84
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 82
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 83
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 80
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 81
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 81
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 75
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 80
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 78
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 72
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 68
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 67
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 53
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 47
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 57
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 55
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 48
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 46
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 45
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 43
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 42
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 41
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 40
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 39
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 38
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 32
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 31
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 30
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 31
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 30
+ Number of eval calls: 6
+ Finished bulding priority queue. Size: 26
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 22
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 24
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 28
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 26
+ Number of eval calls: 9
+ Finished bulding priority queue. Size: 17
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 16
+ Number of eval calls: 6
+ Finished bulding priority queue. Size: 10
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 8
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 7
+
+ All possible candidates suggested. Exiting. 
+
+Elapsed time: 0.009283333333333333 minutes.
+
+======= Transaction Database =======
+0 -1 -2 0
+1 -1 -2 1
+2 -1 -2 2
+3 -1 4 -1 5 -1 6 -1 7 -1 -2 3
+3 -1 4 -1 8 -1 5 -1 6 -1 7 -1 -2 4
+9 -1 -2 5
+10 -1 11 -1 12 -1 13 -1 -2 6
+3 -1 4 -1 8 -1 5 -1 6 -1 7 -1 14 -1 -2 7
+2 -1 -2 8
+15 -1 -2 9
+3 -1 4 -1 8 -1 8 -1 2 -1 6 -1 7 -1 -2 10
+10 -1 11 -1 12 -1 16 -1 -2 11
+3 -1 5 -1 6 -1 -2 12
+5 -1 6 -1 3 -1 -2 13
+5 -1 6 -1 3 -1 4 -1 7 -1 -2 14
+8 -1 5 -1 6 -1 7 -1 -2 15
+3 -1 17 -1 18 -1 18 -1 18 -1 4 -1 19 -1 -2 16
+0 -1 0 -1 -2 17
+3 -1 4 -1 8 -1 -2 18
+6 -1 5 -1 7 -1 -2 19
+0 -1 0 -1 5 -1 6 -1 3 -1 4 -1 2 -1 20 -1 -2 20
+21 -1 21 -1 21 -1 -2 21
+0 -1 -2 22
+0 -1 6 -1 3 -1 18 -1 4 -1 8 -1 8 -1 8 -1 8 -1 7 -1 22 -1 22 -1 -2 23
+0 -1 -2 24
+0 -1 -2 25
+0 -1 -2 26
+0 -1 -2 27
+0 -1 -2 28
+0 -1 -2 29
+0 -1 -2 30
+5 -1 -2 31
+5 -1 -2 32
+0 -1 -2 33
+6 -1 -2 34
+0 -1 -2 35
+0 -1 -2 36
+6 -1 23 -1 -2 37
+0 -1 -2 38
+3 -1 4 -1 5 -1 6 -1 7 -1 -2 39
+0 -1 6 -1 -2 40
+0 -1 -2 41
+0 -1 -2 42
+0 -1 -2 43
+0 -1 -2 44
+0 -1 -2 45
+0 -1 -2 46
+6 -1 -2 47
+3 -1 24 -1 3 -1 -2 48
+25 -1 3 -1 26 -1 2 -1 27 -1 28 -1 -2 49
+3 -1 17 -1 4 -1 7 -1 -2 50
+0 -1 6 -1 15 -1 -2 51
+0 -1 6 -1 -2 52
+0 -1 -2 53
+3 -1 4 -1 5 -1 6 -1 7 -1 29 -1 15 -1 -2 54
+5 -1 6 -1 -2 55
+5 -1 6 -1 -2 56
+3 -1 4 -1 8 -1 8 -1 7 -1 -2 57
+3 -1 4 -1 8 -1 8 -1 8 -1 5 -1 6 -1 7 -1 -2 58
+0 -1 6 -1 3 -1 4 -1 8 -1 8 -1 7 -1 22 -1 -2 59
+0 -1 6 -1 -2 60
+
+
+============= INTERESTING SEQUENCES =============
+pattern 0 
+[javax.xml.transform.stream.StreamSource.<init>] 
+prob: 0.42623 	int: 0.92857 	count: 28 
+file: Activiti.Activiti.BpmnXMLConverter 	caller: org.activiti.bpmn.converter.BpmnXMLConverter.validateModel(org.activiti.bpmn.converter.util.InputStreamProvider) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.validate(java.io.InputStream,java.lang.String) 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hazelcast.hazelcast.ClientDiscoverySpiTest 	caller: com.hazelcast.client.spi.impl.discovery.ClientDiscoverySpiTest.testSchema() 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: hazelcast.hazelcast.DiscoverySpiTest 	caller: com.hazelcast.spi.discovery.DiscoverySpiTest.testSchema() 
+file: hazelcast.hazelcast.XMLConfigBuilderTest 	caller: com.hazelcast.config.XMLConfigBuilderTest.testXSDConfigXML(java.lang.String) 
+file: hazelcast.hazelcast.XmlClientConfigBuilderTest 	caller: com.hazelcast.client.config.XmlClientConfigBuilderTest.testXSDConfigXML(java.lang.String) 
+file: hibernate.hibernate-orm.JaxbCfgProcessor 	caller: org.hibernate.boot.cfgxml.internal.JaxbCfgProcessor.resolveLocalSchema(java.lang.String,java.lang.String) 
+file: hibernate.hibernate-orm.LocalSchema 	caller: org.hibernate.boot.jaxb.internal.stax.LocalSchema.resolveLocalSchema(java.net.URL) 
+file: hibernate.hibernate-orm.LocalSchemaLocator 	caller: org.hibernate.boot.jaxb.internal.stax.LocalSchemaLocator.resolveLocalSchema(java.net.URL) 
+file: hibernate.hibernate-orm.LocalXsdResolver 	caller: org.hibernate.boot.xsd.LocalXsdResolver.resolveLocalXsdSchema(java.lang.String) 
+file: jenkinsci.jenkins.AbstractItem 	caller: hudson.model.AbstractItem.doConfigDotXml(org.kohsuke.stapler.StaplerRequest,org.kohsuke.stapler.StaplerResponse) 
+file: jenkinsci.jenkins.AbstractItemSecurityTest 	caller: hudson.model.AbstractItemSecurityTest.testUpdateByXmlDoesNotProcessForeignResources() 
+file: jenkinsci.jenkins.AbstractItemSecurityTest 	caller: hudson.model.AbstractItemSecurityTest.testUpdateByXmlDoesNotFail() 
+file: jenkinsci.jenkins.BuildDiscarderPropertyTest 	caller: jenkins.model.BuildDiscarderPropertyTest.logRotatorField() 
+file: jenkinsci.jenkins.ItemGroupMixIn 	caller: hudson.model.ItemGroupMixIn.createProjectFromXML(java.lang.String,java.io.InputStream) 
+file: jenkinsci.jenkins.MavenTest 	caller: hudson.tasks.MavenTest.doPassBuildVariablesOptionally() 
+file: jenkinsci.jenkins.RunMapTest 	caller: hudson.model.RunMapTest.reloadWhileBuildIsInProgress() 
+file: jenkinsci.jenkins.TriggerStartTest 	caller: hudson.triggers.TriggerStartTest.updateByXmlCallsStartTrue() 
+file: jenkinsci.jenkins.UpdateJobCommand 	caller: hudson.cli.UpdateJobCommand.run() 
+file: jenkinsci.jenkins.UpdateViewCommand 	caller: hudson.cli.UpdateViewCommand.run() 
+file: jenkinsci.jenkins.View 	caller: hudson.model.View.doConfigDotXml(org.kohsuke.stapler.StaplerRequest) 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testSafeTransformDoesNotProcessForeignResources() 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testUpdateByXmlIDoesNotFail() 
+file: junit-team.junit5.XmlReportAssertions 	caller: org.junit.platform.console.tasks.XmlReportAssertions.assertValidAccordingToJenkinsSchema(java.lang.String) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+file: spring-projects.spring-boot.SampleWsApplicationTests 	caller: sample.webservices.SampleWsApplicationTests.testSendingHolidayRequest() 
+
+pattern 1 
+[javax.xml.transform.dom.DOMSource.<init>, javax.xml.transform.stream.StreamResult.<init>] 
+prob: 0.16393 	int: 0.76923 	count: 13 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apereo.cas.DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+file: apereo.cas.SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.Writer,boolean) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.OutputStream,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+
+pattern 2 
+[javax.xml.transform.TransformerFactory.newTransformer, javax.xml.transform.Transformer.transform] 
+prob: 0.14754 	int: 0.75000 	count: 12 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+pattern 3 
+[javax.xml.transform.TransformerFactory.newInstance] 
+prob: 0.14754 	int: 0.47368 	count: 19 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: apereo.cas.DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+file: apereo.cas.SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.XMLTestReporter() 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.WebAppMain 	caller: hudson.WebAppMain.contextInitialized(javax.servlet.ServletContextEvent) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils.safeTransform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+pattern 4 
+[javax.xml.transform.stream.StreamResult.<init>] 
+prob: 0.09836 	int: 0.25000 	count: 24 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: apereo.cas.DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+file: apereo.cas.SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.finishTestSuite() 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.AbstractItem 	caller: hudson.model.AbstractItem.updateByXml(javax.xml.transform.Source) 
+file: jenkinsci.jenkins.Api 	caller: hudson.model.Api.doSchema(org.kohsuke.stapler.StaplerRequest,org.kohsuke.stapler.StaplerResponse) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.ItemGroupMixIn 	caller: hudson.model.ItemGroupMixIn.createProjectFromXML(java.lang.String,java.io.InputStream) 
+file: jenkinsci.jenkins.View 	caller: hudson.model.View.updateByXml(javax.xml.transform.Source) 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testSafeTransformDoesNotProcessForeignResources() 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testUpdateByXmlIDoesNotFail() 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.Writer,boolean) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.OutputStream,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+file: spring-projects.spring-boot.SampleWsApplicationTests 	caller: sample.webservices.SampleWsApplicationTests.testSendingHolidayRequest() 
+
+pattern 5 
+[javax.xml.transform.Transformer.setOutputProperty] 
+prob: 0.06557 	int: 0.44444 	count: 9 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.XMLTestReporter() 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+pattern 6 
+[javax.xml.transform.TransformerException.getMessage] 
+prob: 0.04918 	int: 1.00000 	count: 3 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.computeAssertionResult(org.apache.jmeter.assertions.AssertionResult,org.w3c.dom.Document,java.lang.String,boolean) 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testSafeTransformDoesNotProcessForeignResources() 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+
+pattern 7 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.newTransformer, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.dom.DOMSource.<init>, javax.xml.transform.stream.StreamResult.<init>, javax.xml.transform.Transformer.transform] 
+prob: 0.04918 	int: 1.00000 	count: 3 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+
+pattern 8 
+[javax.xml.transform.sax.SAXSource.<init>] 
+prob: 0.04918 	int: 0.60000 	count: 5 
+file: OpenFeign.feign.JAXBDecoder 	caller: feign.jaxb.JAXBDecoder.decode(feign.Response,java.lang.reflect.Type) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.putValuesForXPathInListUsingSaxon(java.lang.String,java.lang.String,java.util.List<java.lang.String>,boolean,int,java.lang.String) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils.safeTransform(javax.xml.transform.Source,javax.xml.transform.Result) 
+
+pattern 9 
+[javax.xml.transform.TransformerFactory.newTransformer] 
+prob: 0.04918 	int: 0.20000 	count: 15 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.XMLTestReporter() 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+pattern 10 
+[javax.xml.transform.stream.StreamSource.<init>, javax.xml.transform.stream.StreamResult.<init>, javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.stream.StreamResult.getWriter] 
+prob: 0.03279 	int: 1.00000 	count: 2 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+pattern 11 
+[javax.xml.transform.stream.StreamSource.<init>] 
+prob: 0.03279 	int: 1.00000 	count: 2 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.validate(java.io.InputStream,java.lang.String) 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+
+pattern 12 
+[javax.xml.transform.Transformer.setOutputProperty] 
+prob: 0.03279 	int: 0.40000 	count: 5 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+pattern 13 
+[javax.xml.transform.dom.DOMSource.<init>] 
+prob: 0.03279 	int: 0.12500 	count: 16 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apereo.cas.DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+file: apereo.cas.SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.finishTestSuite() 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hibernate.hibernate-orm.MetadataSources 	caller: org.hibernate.boot.MetadataSources.addDocument(org.w3c.dom.Document) 
+file: hibernate.hibernate-orm.PersistenceXmlParser 	caller: org.hibernate.jpa.boot.internal.PersistenceXmlParser.validate(org.w3c.dom.Document) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.Writer,boolean) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.OutputStream,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+
+pattern 14 
+[javax.xml.transform.TransformerException, org.xml.sax.SAXException, javax.xml.parsers.ParserConfigurationException, java.io.IOException.toString] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: apache.jmeter.XPathFileContainer 	caller: org.apache.jmeter.functions.XPathFileContainer.load(java.lang.String) 
+
+pattern 15 
+[javax.xml.transform.TransformerException, org.xml.sax.SAXException, javax.xml.parsers.ParserConfigurationException, java.io.IOException.getLocalizedMessage] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: apache.jmeter.XPathWrapper 	caller: org.apache.jmeter.functions.XPathWrapper.open(java.lang.String,java.lang.String) 
+
+pattern 16 
+[javax.xml.transform.TransformerException.getMessageAndLocation] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+
+pattern 17 
+[javax.xml.transform.stax.StAXSource.<init>] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: Activiti.Activiti.BpmnXMLConverter 	caller: org.activiti.bpmn.converter.BpmnXMLConverter.validateModel(javax.xml.stream.XMLStreamReader) 
+
+pattern 18 
+[javax.xml.transform.stream.StreamSource.getInputStream] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+
+pattern 19 
+[javax.xml.transform.TransformerFactory.getAttribute, javax.xml.transform.TransformerFactory.getAttribute, javax.xml.transform.TransformerFactory.getAttribute] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.fillSerializers(org.w3c.dom.Node,com.hazelcast.config.SerializationConfig) 
+
+pattern 20 
+[javax.xml.transform.sax.SAXSource.sourceToInputSource, javax.xml.transform.sax.SAXSource.<init>, javax.xml.transform.TransformerException.<init>] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils.safeTransform(javax.xml.transform.Source,javax.xml.transform.Result) 
+
+pattern 21 
+[javax.xml.transform.TransformerConfigurationException.getMessage] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+
+pattern 22 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.setFeature, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.Transformer.setErrorListener] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+
+pattern 23 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.getName, javax.xml.transform.TransformerFactory.newInstance] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: jenkinsci.jenkins.WebAppMain 	caller: hudson.WebAppMain.contextInitialized(javax.servlet.ServletContextEvent) 
+
+pattern 24 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.sax.SAXTransformerFactory.setFeature, javax.xml.transform.Source.getClass] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils.safeTransform(javax.xml.transform.Source,javax.xml.transform.Result) 
+
+pattern 25 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.sax.SAXSource.<init>, javax.xml.transform.stream.StreamResult.<init>] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+
+pattern 26 
+[javax.xml.transform.stream.StreamResult.<init>, javax.xml.transform.stream.StreamResult.getOutputStream] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: jenkinsci.jenkins.Api 	caller: hudson.model.Api.doSchema(org.kohsuke.stapler.StaplerRequest,org.kohsuke.stapler.StaplerResponse) 
+
+pattern 27 
+[javax.xml.transform.stream.StreamResult.<init>, javax.xml.transform.dom.DOMSource.<init>, javax.xml.transform.Transformer.transform] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.finishTestSuite() 
+
+pattern 28 
+[javax.xml.transform.TransformerException.getLocalizedMessage] 
+prob: 0.01639 	int: 1.00000 	count: 1 
+file: apache.jmeter.XPathExtractor 	caller: org.apache.jmeter.extractor.XPathExtractor.process() 
+
+pattern 29 
+[javax.xml.transform.TransformerFactory.setFeature] 
+prob: 0.01639 	int: 0.50000 	count: 2 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+
+pattern 30 
+[javax.xml.transform.TransformerFactory.setAttribute] 
+prob: 0.01639 	int: 0.50000 	count: 2 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+
+pattern 31 
+[javax.xml.transform.stream.StreamResult.getWriter] 
+prob: 0.01639 	int: 0.50000 	count: 2 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+pattern 32 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.Transformer.setOutputProperty] 
+prob: 0.01639 	int: 0.20000 	count: 5 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+pattern 33 
+[javax.xml.transform.Transformer.transform] 
+prob: 0.01639 	int: 0.07143 	count: 14 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.finishTestSuite() 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+
+============= Filtered SEQUENCES =============
+pattern 0 
+[javax.xml.transform.stream.StreamSource.<init>] 
+prob: 0.42623 	int: 0.92857 	count: 28 
+support: 28 	num of projects: 13 
+file: Activiti.Activiti.BpmnXMLConverter 	caller: org.activiti.bpmn.converter.BpmnXMLConverter.validateModel(org.activiti.bpmn.converter.util.InputStreamProvider) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.validate(java.io.InputStream,java.lang.String) 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hazelcast.hazelcast.ClientDiscoverySpiTest 	caller: com.hazelcast.client.spi.impl.discovery.ClientDiscoverySpiTest.testSchema() 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: hazelcast.hazelcast.DiscoverySpiTest 	caller: com.hazelcast.spi.discovery.DiscoverySpiTest.testSchema() 
+file: hazelcast.hazelcast.XMLConfigBuilderTest 	caller: com.hazelcast.config.XMLConfigBuilderTest.testXSDConfigXML(java.lang.String) 
+file: hazelcast.hazelcast.XmlClientConfigBuilderTest 	caller: com.hazelcast.client.config.XmlClientConfigBuilderTest.testXSDConfigXML(java.lang.String) 
+file: hibernate.hibernate-orm.JaxbCfgProcessor 	caller: org.hibernate.boot.cfgxml.internal.JaxbCfgProcessor.resolveLocalSchema(java.lang.String,java.lang.String) 
+file: hibernate.hibernate-orm.LocalSchema 	caller: org.hibernate.boot.jaxb.internal.stax.LocalSchema.resolveLocalSchema(java.net.URL) 
+file: hibernate.hibernate-orm.LocalSchemaLocator 	caller: org.hibernate.boot.jaxb.internal.stax.LocalSchemaLocator.resolveLocalSchema(java.net.URL) 
+file: hibernate.hibernate-orm.LocalXsdResolver 	caller: org.hibernate.boot.xsd.LocalXsdResolver.resolveLocalXsdSchema(java.lang.String) 
+file: jenkinsci.jenkins.AbstractItem 	caller: hudson.model.AbstractItem.doConfigDotXml(org.kohsuke.stapler.StaplerRequest,org.kohsuke.stapler.StaplerResponse) 
+file: jenkinsci.jenkins.AbstractItemSecurityTest 	caller: hudson.model.AbstractItemSecurityTest.testUpdateByXmlDoesNotProcessForeignResources() 
+file: jenkinsci.jenkins.AbstractItemSecurityTest 	caller: hudson.model.AbstractItemSecurityTest.testUpdateByXmlDoesNotFail() 
+file: jenkinsci.jenkins.BuildDiscarderPropertyTest 	caller: jenkins.model.BuildDiscarderPropertyTest.logRotatorField() 
+file: jenkinsci.jenkins.ItemGroupMixIn 	caller: hudson.model.ItemGroupMixIn.createProjectFromXML(java.lang.String,java.io.InputStream) 
+file: jenkinsci.jenkins.MavenTest 	caller: hudson.tasks.MavenTest.doPassBuildVariablesOptionally() 
+file: jenkinsci.jenkins.RunMapTest 	caller: hudson.model.RunMapTest.reloadWhileBuildIsInProgress() 
+file: jenkinsci.jenkins.TriggerStartTest 	caller: hudson.triggers.TriggerStartTest.updateByXmlCallsStartTrue() 
+file: jenkinsci.jenkins.UpdateJobCommand 	caller: hudson.cli.UpdateJobCommand.run() 
+file: jenkinsci.jenkins.UpdateViewCommand 	caller: hudson.cli.UpdateViewCommand.run() 
+file: jenkinsci.jenkins.View 	caller: hudson.model.View.doConfigDotXml(org.kohsuke.stapler.StaplerRequest) 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testSafeTransformDoesNotProcessForeignResources() 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testUpdateByXmlIDoesNotFail() 
+file: junit-team.junit5.XmlReportAssertions 	caller: org.junit.platform.console.tasks.XmlReportAssertions.assertValidAccordingToJenkinsSchema(java.lang.String) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+file: spring-projects.spring-boot.SampleWsApplicationTests 	caller: sample.webservices.SampleWsApplicationTests.testSendingHolidayRequest() 
+
+
+pattern 1 
+[javax.xml.transform.dom.DOMSource.<init>, javax.xml.transform.stream.StreamResult.<init>] 
+prob: 0.16393 	int: 0.76923 	count: 13 
+support: 13 	num of projects: 11 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apereo.cas.DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+file: apereo.cas.SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.Writer,boolean) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.OutputStream,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+
+
+pattern 2 
+[javax.xml.transform.TransformerFactory.newTransformer, javax.xml.transform.Transformer.transform] 
+prob: 0.14754 	int: 0.75000 	count: 12 
+support: 12 	num of projects: 11 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+pattern 3 
+[javax.xml.transform.TransformerFactory.newInstance] 
+prob: 0.14754 	int: 0.47368 	count: 19 
+support: 19 	num of projects: 15 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: apereo.cas.DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+file: apereo.cas.SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.XMLTestReporter() 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.WebAppMain 	caller: hudson.WebAppMain.contextInitialized(javax.servlet.ServletContextEvent) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils.safeTransform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+pattern 4 
+[javax.xml.transform.stream.StreamResult.<init>] 
+prob: 0.09836 	int: 0.25000 	count: 24 
+support: 24 	num of projects: 16 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: apereo.cas.DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+file: apereo.cas.SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.finishTestSuite() 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.AbstractItem 	caller: hudson.model.AbstractItem.updateByXml(javax.xml.transform.Source) 
+file: jenkinsci.jenkins.Api 	caller: hudson.model.Api.doSchema(org.kohsuke.stapler.StaplerRequest,org.kohsuke.stapler.StaplerResponse) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.ItemGroupMixIn 	caller: hudson.model.ItemGroupMixIn.createProjectFromXML(java.lang.String,java.io.InputStream) 
+file: jenkinsci.jenkins.View 	caller: hudson.model.View.updateByXml(javax.xml.transform.Source) 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testSafeTransformDoesNotProcessForeignResources() 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testUpdateByXmlIDoesNotFail() 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.Writer,boolean) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.OutputStream,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+file: spring-projects.spring-boot.SampleWsApplicationTests 	caller: sample.webservices.SampleWsApplicationTests.testSendingHolidayRequest() 
+
+
+pattern 5 
+[javax.xml.transform.Transformer.setOutputProperty] 
+prob: 0.06557 	int: 0.44444 	count: 9 
+support: 9 	num of projects: 8 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.XMLTestReporter() 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+pattern 6 
+[javax.xml.transform.TransformerException.getMessage] 
+prob: 0.04918 	int: 1.00000 	count: 3 
+support: 3 	num of projects: 3 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.computeAssertionResult(org.apache.jmeter.assertions.AssertionResult,org.w3c.dom.Document,java.lang.String,boolean) 
+file: jenkinsci.jenkins.XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testSafeTransformDoesNotProcessForeignResources() 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+
+
+pattern 7 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.newTransformer, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.dom.DOMSource.<init>, javax.xml.transform.stream.StreamResult.<init>, javax.xml.transform.Transformer.transform] 
+prob: 0.04918 	int: 1.00000 	count: 3 
+support: 3 	num of projects: 3 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+
+
+pattern 8 
+[javax.xml.transform.sax.SAXSource.<init>] 
+prob: 0.04918 	int: 0.60000 	count: 5 
+support: 5 	num of projects: 4 
+file: OpenFeign.feign.JAXBDecoder 	caller: feign.jaxb.JAXBDecoder.decode(feign.Response,java.lang.reflect.Type) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.putValuesForXPathInListUsingSaxon(java.lang.String,java.lang.String,java.util.List<java.lang.String>,boolean,int,java.lang.String) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils.safeTransform(javax.xml.transform.Source,javax.xml.transform.Result) 
+
+
+pattern 9 
+[javax.xml.transform.TransformerFactory.newTransformer] 
+prob: 0.04918 	int: 0.20000 	count: 15 
+support: 15 	num of projects: 13 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.XMLTestReporter() 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+pattern 10 
+[javax.xml.transform.stream.StreamSource.<init>, javax.xml.transform.stream.StreamResult.<init>, javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.stream.StreamResult.getWriter] 
+prob: 0.03279 	int: 1.00000 	count: 2 
+support: 2 	num of projects: 2 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+pattern 11 
+[javax.xml.transform.stream.StreamSource.<init>] 
+prob: 0.03279 	int: 1.00000 	count: 2 
+support: 2 	num of projects: 2 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.validate(java.io.InputStream,java.lang.String) 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+
+
+pattern 12 
+[javax.xml.transform.Transformer.setOutputProperty] 
+prob: 0.03279 	int: 0.40000 	count: 5 
+support: 5 	num of projects: 5 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+pattern 13 
+[javax.xml.transform.dom.DOMSource.<init>] 
+prob: 0.03279 	int: 0.12500 	count: 16 
+support: 16 	num of projects: 13 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apereo.cas.DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+file: apereo.cas.SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.finishTestSuite() 
+file: hazelcast.hazelcast.AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: hibernate.hibernate-orm.MetadataSources 	caller: org.hibernate.boot.MetadataSources.addDocument(org.w3c.dom.Document) 
+file: hibernate.hibernate-orm.PersistenceXmlParser 	caller: org.hibernate.jpa.boot.internal.PersistenceXmlParser.validate(org.w3c.dom.Document) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.Writer,boolean) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.OutputStream,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+
+
+pattern 14 
+[javax.xml.transform.TransformerException, org.xml.sax.SAXException, javax.xml.parsers.ParserConfigurationException, java.io.IOException.toString] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 15 
+[javax.xml.transform.TransformerException, org.xml.sax.SAXException, javax.xml.parsers.ParserConfigurationException, java.io.IOException.getLocalizedMessage] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 16 
+[javax.xml.transform.TransformerException.getMessageAndLocation] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 17 
+[javax.xml.transform.stax.StAXSource.<init>] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 18 
+[javax.xml.transform.stream.StreamSource.getInputStream] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 19 
+[javax.xml.transform.TransformerFactory.getAttribute, javax.xml.transform.TransformerFactory.getAttribute, javax.xml.transform.TransformerFactory.getAttribute] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 20 
+[javax.xml.transform.sax.SAXSource.sourceToInputSource, javax.xml.transform.sax.SAXSource.<init>, javax.xml.transform.TransformerException.<init>] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 21 
+[javax.xml.transform.TransformerConfigurationException.getMessage] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 22 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.setFeature, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.Transformer.setErrorListener] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 23 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.getName, javax.xml.transform.TransformerFactory.newInstance] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 24 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.sax.SAXTransformerFactory.setFeature, javax.xml.transform.Source.getClass] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 25 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.sax.SAXSource.<init>, javax.xml.transform.stream.StreamResult.<init>] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 26 
+[javax.xml.transform.stream.StreamResult.<init>, javax.xml.transform.stream.StreamResult.getOutputStream] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 27 
+[javax.xml.transform.stream.StreamResult.<init>, javax.xml.transform.dom.DOMSource.<init>, javax.xml.transform.Transformer.transform] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 28 
+[javax.xml.transform.TransformerException.getLocalizedMessage] 
+support: 1 	num of projects: 1 
+This pattern is biased to few projects. 
+
+pattern 29 
+[javax.xml.transform.TransformerFactory.setFeature] 
+prob: 0.01639 	int: 0.50000 	count: 2 
+support: 2 	num of projects: 2 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+
+
+pattern 30 
+[javax.xml.transform.TransformerFactory.setAttribute] 
+prob: 0.01639 	int: 0.50000 	count: 2 
+support: 2 	num of projects: 2 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+
+
+pattern 31 
+[javax.xml.transform.stream.StreamResult.getWriter] 
+prob: 0.01639 	int: 0.50000 	count: 2 
+support: 2 	num of projects: 2 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+pattern 32 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.Transformer.setOutputProperty] 
+prob: 0.01639 	int: 0.20000 	count: 5 
+support: 5 	num of projects: 5 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+pattern 33 
+[javax.xml.transform.Transformer.transform] 
+prob: 0.01639 	int: 0.07143 	count: 14 
+support: 14 	num of projects: 13 
+file: alibaba.fastjson.MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: antlr.antlr4.BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache.jmeter.XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+file: deeplearning4j.deeplearning4j.Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: elastic.elasticsearch.SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai.h2o-3.XMLTestReporter 	caller: water.junit.XMLTestReporter.finishTestSuite() 
+file: hazelcast.hazelcast.ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci.jenkins.IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci.jenkins.XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: libgdx.libgdx.TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: looly.hutool.XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: mikepenz.Android-Iconics.StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: orhanobut.logger.LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+
+
+

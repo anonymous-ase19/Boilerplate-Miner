@@ -1,0 +1,8 @@
+/Users/dayen/eclipse-workspace/api-mining-master/output/all/javax_xml_transform/diff/pattern_0.edgelist
+[org.apache.mahout.cf.taste.impl.model.file.FileDataModel.<init>, org.apache.mahout.cf.taste.impl.eval.AverageAbsoluteDifferenceRecommenderEvaluator.<init>, org.apache.mahout.cf.taste.eval.RecommenderEvaluator.evaluate]
+
+num alive partition: 1
+num alive nodes: 6
+num partition: 1
+num nodes: 6
+num partition of 90%: 0
