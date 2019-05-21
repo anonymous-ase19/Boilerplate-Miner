@@ -1,0 +1,33 @@
+Cluster 0
+ elastic.elasticsearch.SamlUtils
+ jenkinsci.jenkins.BuildDiscarderPropertyTest
+ jenkinsci.jenkins.MavenTest
+ jenkinsci.jenkins.RunMapTest
+ jenkinsci.jenkins.TriggerStartTest
+ jenkinsci.jenkins.AbstractItemSecurityTest
+ jenkinsci.jenkins.XMLUtilsTest
+ junit-team.junit5.XmlReportAssertions
+ orhanobut.logger.LoggerPrinter
+ spring-projects.spring-boot.SampleWsApplicationTests
+
+Cluster 1
+ hibernate.hibernate-orm.JaxbCfgProcessor
+ jenkinsci.jenkins.ItemGroupMixIn
+ hibernate.hibernate-orm.LocalSchema
+ hibernate.hibernate-orm.LocalSchemaLocator
+ hibernate.hibernate-orm.LocalXsdResolver
+ hazelcast.hazelcast.ConfigXmlGenerator
+
+Cluster 2
+ jenkinsci.jenkins.UpdateJobCommand
+ jenkinsci.jenkins.AbstractItem
+ jenkinsci.jenkins.UpdateViewCommand
+ jenkinsci.jenkins.View
+ hazelcast.hazelcast.AbstractXmlConfigHelper
+
+Cluster 3
+ hazelcast.hazelcast.ClientDiscoverySpiTest
+ hazelcast.hazelcast.DiscoverySpiTest
+ hazelcast.hazelcast.XMLConfigBuilderTest
+ hazelcast.hazelcast.XmlClientConfigBuilderTest
+

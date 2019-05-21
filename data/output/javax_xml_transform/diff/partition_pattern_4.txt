@@ -1,0 +1,15 @@
+Cluster 0
+ alibaba.fastjson.MiscCodec
+ jenkinsci.jenkins.XMLUtils
+ hazelcast.hazelcast.ConfigXmlGenerator
+ jenkinsci.jenkins.IconTest
+ orhanobut.logger.LoggerPrinter
+ looly.hutool.XmlUtil
+ apache.jmeter.XPathUtil
+
+Cluster 1
+ deeplearning4j.deeplearning4j.Configuration
+ libgdx.libgdx.TiledMapPacker
+ mikepenz.Android-Iconics.StringFieldsGenerator
+ antlr.antlr4.BaseCSharpTest
+

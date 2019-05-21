@@ -4,6 +4,7 @@ from argparse import ArgumentParser
 import chardet
 import codecs
 import math
+import os
 
 def hasAlphabets(inputString):
 	return any(char.isalpha() for char in inputString)
@@ -28,13 +29,14 @@ def findLineEnd(content, position):
 
 def generateViewer(input_dir, source_dir, api_name, output_dir, min_nodes, min_similarity, is_pam):
 # def generateViewer(input_dir, source_dir, api_name, output_dir, min_nodes, min_similarity):
+	dirname = os.path.dirname(__file__)
 	seq_min_similarity = [0, 0.67, 0.55, 0.44, 0.37, 0.30, 0.25, 0.25, 0.25, 0.25, 0.25]
 	edge_lists = []
 	partition_nums = []
 	file_nums = []
 	boilerplate_files = []
 
-	with open(input_dir + api_name + "/short_result_cluster_filtered.txt", "r") as f_in:
+	with open(os.path.join(dirname, input_dir, "MARBLE_result.txt"), "r") as f_in:
 		for line in f_in:
 			if ".edgelist" in line:
 				edge_lists.append(line.strip())
@@ -82,7 +84,7 @@ def generateViewer(input_dir, source_dir, api_name, output_dir, min_nodes, min_s
 				if best_within_similarity < within_similarity:
 					best_within_similarity = within_similarity
 				for (s, p) in selected_files:
-					with open(source_dir + api_name + "/" + s + ".java", "rb") as f_in:
+					with open(os.path.join(dirname, source_dir, s + ".java"), "rb") as f_in:
 						try:
 							byte_contents = f_in.read()
 							content_encoding = chardet.detect(byte_contents)['encoding']
@@ -119,7 +121,7 @@ def generateViewer(input_dir, source_dir, api_name, output_dir, min_nodes, min_s
 	print("Boilerplate Files")
 	print(len(list(set(boilerplate_files))))
 	# api_html = template.getAPIHtml(api_name, pattern_htmls)
-	with codecs.open(output_dir + "test_" + api_name + "_index.html", "w", encoding="utf-8") as f_out:
+	with codecs.open(os.path.join(dirname, output_dir, api_name + "_index.html"), "w", encoding="utf-8") as f_out:
 		f_out.write(api_html)
 
 def selectFiles(similarity_file, cluster, is_pam):
@@ -216,7 +218,7 @@ if __name__ == '__main__':
     parser.add_argument("-o", "--output_dir", dest="output_dir")
     parser.add_argument("-s", "--source_dir", dest="source_dir")
     parser.add_argument("-a", "--api_name", dest="api_name")
-    parser.add_argument("-mn", "--min_nodes", dest="min_nodes", type=int)
+    parser.add_argument("-mn", "--min_nodes", dest="min_nodes", type=int, default=5)
     parser.add_argument("-ms", "--min_similarity", dest="min_similarity", type=float)
     parser.add_argument("-ip", "--is_pam", dest="is_pam", action='store_true')
 
