@@ -1,8 +1,5 @@
 MARBLE: Mining for Boilerplate Code to Identify API Usability Problems 
 ================
- 
-PAM is a near parameter-free probabilistic algorithm for mining the most interesting API patterns from a list of API call sequences. PAM largely avoids returning redundant and spurious sequences, unlike API mining approaches based on frequent pattern mining.
-
 MARBLE (Mining API Repositories for Boilerplate Lessening Effort) is an automated technique for identifying instances of boilerplate API client code. MARBLE adapts existing techniques, including an API usage mining algorithm, an AST comparison algorithm, and a graph partitioning algorithm.
 
 Further documentations for the source code and scripts to run end-to-end mining will be available soon. 
