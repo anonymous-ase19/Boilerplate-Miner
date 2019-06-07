@@ -27,7 +27,7 @@ $ python3 generateCorpora.py -i data/repos/ -o data/source/ -p 8 -a data/api_lis
 
 
 #### Step 1: Extracting API Calls
-This step is to extract API calls from the set of client code files using the target API, ```javax.xml.transform```. 
+This step is to extract API calls from the set of client code files using the target API, such as ```javax.xml.transform```. (We adjusted [PAM's public implementation](https://github.com/mast-group/api-mining))
 ```
 $ java -jar APICallExtractor.jar -lf data/source/ -of data/calls/ -pn javax.xml.transform -sn 123
 ```
@@ -43,7 +43,8 @@ It will return ```javax_xml_transform.arff``` which contains data about 1) calle
 'deeplearning4j.deeplearning4j.Configuration','org.datavec.api.conf','org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream)','javax.xml.transform.dom.DOMSource.<init> javax.xml.transform.stream.StreamResult.<init> javax.xml.transform.TransformerFactory.newInstance javax.xml.transform.TransformerFactory.newTransformer javax.xml.transform.Transformer.transform'
 ```
 
-#### Step 2: Running PAM
+#### Step 2: Frequent API Usage Mining
+This step runs PAM (Probabilistic API Miner) to mine interesting API patterns from the list of API call sequences (We adjusted [PAM's public implementation](https://github.com/mast-group/api-mining)). It returns two files, ```PAM_seqs.txt``` and ```MARBLE_logs.log```. ```PAM_seqs.txt``` is the result file of PAM containing a list of usage patterns (i.e., sequences of API calls), and ```MARBLE_logs.log``` has richer information about the usgae patterns, which will be used in the following steps.
 ```
 $ java -jar pam.jar -f data/calls/javax_xml_transform.arff -sd data/source/ -o data/output/
 
@@ -53,35 +54,40 @@ $ java -jar pam.jar -f data/calls/javax_xml_transform.arff -sd data/source/ -o d
 * **-o**  &nbsp;  Output directory
 
 #### Step 3: Removing Spurious Patterns
+This step filters API usage patterns that are redundant or rare to reduce the false positive boilerplate candidates returned later.
 ```
-$ python removeSubSequences.py -i data/output/javax_xml_transform/MARBLE_logs.log -o data/output/javax_xml_transform/reduced_MARBLE_logs.log -mn 6
+$ python filterSpuriousPatterns.py -i data/output/javax_xml_transform/MARBLE_logs.log -o data/output/javax_xml_transform/reduced_MARBLE_logs.log -mn 6
 ```
-* **-i**  &nbsp;  Raw PAM log file
+* **-i**  &nbsp;  Raw PAM log file (from step 2)
 * **-o**  &nbsp;  Output log file after removing spurious patterns
-* **-mn** &nbsp;  Minimum support
+* **-mn** &nbsp;  Minimum support (we use [number of client code files] * 0.05 in the paper)
 
 #### Step 4: AST Comparision
+This step compares ASTs around API usage patterns to consider the structural context. It returns  structural similarity scores between all pairs of client code files for each API usage pattern.
 ```
-$ java -jar ASTComparison.jar -id data/output/javax_xml_transform/ -sd data/source/ -ps 0 -pl 6 -p 2
+$ java -jar ASTComparison.jar -f data/output/javax_xml_transform/reduced_MARBLE_logs.log -sd data/source/javax_xml_transform/ -o data/output/javax_xml_transform/diff/ -ps 0 -pl 6 -p 2
 ```
-* **-id**  &nbsp;  Input directory containing PAM log file
-* **-sd**  &nbsp;  Source directory
-* **-ps, -pl**  &nbsp;  Start and the last index of PAM patterns to set the range of AST comparision
-* **p** &nbsp; Number of threads to use
+* **-f**  &nbsp;  PAM log file after removing spurious patterns (from step 3)
+* **-sd**  &nbsp;  Client code source directory
+* **-o**  &nbsp;  Output directory
+* **-ps, -pl**  &nbsp;  Start and the last index of PAM patterns to set the range of AST comparision (optional)
+* **p** &nbsp; Number of threads to use (optional)
 
 #### Step 5: Graph Partitioning
+This step partitions graphs to capture the different contexts (structures) in which an API call sequence is being used. 
 ```
-$ python3 partitionGraph.py -i data/output/javax_xml_transform
+$ python3 partitionGraph.py -i data/output/javax_xml_transform/
 ```
 * **-i**  &nbsp;  Input directory containing AST diffs
 
 #### Step 6: Generate Viewer
+This step generates a html file containing the final boilerplate candidates and client code examples using them. 
 ```
-$ python3 generateViewer.py -i data/output/javax_xml_transform -o data/output/ -s data/source/javax_xml_transform -a javax_xml_transform
+$ python3 generateViewer.py -i data/output/javax_xml_transform/ -o data/output/ -s data/source/javax_xml_transform -a javax_xml_transform
 ```
 
-* **-i**  &nbsp;  input directory
-* **-o**  &nbsp;  output directory
-* **-s**  &nbsp;  source directory
-* **-a**  &nbsp;  API name
+* **-i**  &nbsp;  Input directory containint 
+* **-o**  &nbsp;  Output directory
+* **-s**  &nbsp;  Client code source directory
+* **-a**  &nbsp;  API name with '\_'
 
