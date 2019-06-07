@@ -45,7 +45,7 @@ public abstract class PAMCore {
 	private static final double OPTIMIZE_TOL = 1e-5;
 
 	protected static final Logger logger = Logger.getLogger(PAMCore.class.getName());
-	public static final File LOG_DIR = new File("/tmp/");
+//	public static final File LOG_DIR = new File("/tmp/");
 
 	/** Variable settings */
 	protected static Level LOG_LEVEL = Level.FINE;
@@ -53,11 +53,11 @@ public abstract class PAMCore {
 
 	/** Mine interesting sequences */
 	public static Map<Sequence, Double> mineInterestingSequences(final File inputFile,
-	
-	/** dayen: return sequences and filenames that the pattern occurred, instead of the probability */
+
+																 /** dayen: return sequences and filenames that the pattern occurred, instead of the probability */
 //	public static Map<Sequence, List<String>> mineInterestingSequences(final File inputFile,
-			final InferenceAlgorithm inferenceAlgorithm, final int maxStructureSteps, final int maxEMIterations,
-			final File logFile, final ArrayList<TransactionMetaInfo> transactionMetaInfos, final BiMap<String, Integer> dictionary) throws IOException {
+																 final InferenceAlgorithm inferenceAlgorithm, final int maxStructureSteps, final int maxEMIterations,
+																 final File logFile, final ArrayList<TransactionMetaInfo> transactionMetaInfos, final BiMap<String, Integer> dictionary) throws IOException {
 
 		// Set up logging
 		if (logFile != null)
@@ -92,7 +92,7 @@ public abstract class PAMCore {
 
 		// Get countings of each sequences
 		final Map<Sequence, Long> supports = EMStep.getSupportsOfSequences(transactions, sortedSequences.keySet());
-		
+
 		Map<Sequence, List<String>> sequenceFiles = new HashMap<Sequence, List<String>>();
 
 		int patternIndex = -1;
@@ -125,7 +125,7 @@ public abstract class PAMCore {
 			logger.info("\n");
 		}
 		logger.info("\n");
-		
+
 		/** dayen: filter out patterns that are only from few projects */
 //
 //		logger.info("\n============= Filtered SEQUENCES =============\n");
@@ -164,8 +164,8 @@ public abstract class PAMCore {
 //			logger.info("\n");
 //		}
 //		logger.info("\n");
-				
-		
+
+
 //		return sequenceFiles;
 		return sortedSequences;
 	}
@@ -174,8 +174,8 @@ public abstract class PAMCore {
 	 * Learn itemsets model using structural EM
 	 */
 	protected static HashMap<Sequence, Double> structuralEM(final TransactionDatabase transactions,
-			final Multiset<Sequence> singletons, final InferenceAlgorithm inferenceAlgorithm,
-			final int maxStructureSteps, final int maxEMIterations) {
+															final Multiset<Sequence> singletons, final InferenceAlgorithm inferenceAlgorithm,
+															final int maxStructureSteps, final int maxEMIterations) {
 
 		// Start timer
 		final long startTime = System.currentTimeMillis();
@@ -262,7 +262,7 @@ public abstract class PAMCore {
 	 *         NB. zero probability sequences are dropped
 	 */
 	private static void expectationMaximizationStep(final HashMap<Sequence, Double> sequences,
-			final TransactionDatabase transactions, final InferenceAlgorithm inferenceAlgorithm) {
+													final TransactionDatabase transactions, final InferenceAlgorithm inferenceAlgorithm) {
 
 		logger.fine(" Structure Optimal Sequences: " + sequences + "\n");
 
@@ -310,10 +310,10 @@ public abstract class PAMCore {
 	 *            cached candididate supports for the above ordering
 	 */
 	private static void combineSequencesStep(final HashMap<Sequence, Double> sequences,
-			final TransactionDatabase transactions, final Set<Sequence> rejected_seqs,
-			final InferenceAlgorithm inferenceAlgorithm, final int maxSteps,
-			final Ordering<Sequence> sequenceSupportOrdering, final HashMap<Sequence, Integer> supports,
-			final Ordering<Sequence> candidateSupportOrdering, final HashMap<Sequence, Integer> candidateSupports) {
+											 final TransactionDatabase transactions, final Set<Sequence> rejected_seqs,
+											 final InferenceAlgorithm inferenceAlgorithm, final int maxSteps,
+											 final Ordering<Sequence> sequenceSupportOrdering, final HashMap<Sequence, Integer> supports,
+											 final Ordering<Sequence> candidateSupportOrdering, final HashMap<Sequence, Integer> candidateSupports) {
 
 		// Set up support-ordered priority queue
 		final PriorityQueue<Sequence> candidateQueue = new PriorityQueue<Sequence>(maxSteps, candidateSupportOrdering);
@@ -419,8 +419,8 @@ public abstract class PAMCore {
 
 	/** Evaluate a candidate sequence to see if it should be included */
 	private static boolean evaluateCandidate(final HashMap<Sequence, Double> sequences,
-			final TransactionDatabase transactions, final InferenceAlgorithm inferenceAlgorithm,
-			final Sequence candidate) {
+											 final TransactionDatabase transactions, final InferenceAlgorithm inferenceAlgorithm,
+											 final Sequence candidate) {
 
 		logger.finer("\n Candidate: " + candidate);
 
@@ -449,7 +449,7 @@ public abstract class PAMCore {
 
 	/** Sort sequences by probability */
 	public static Map<Sequence, Double> sortSequences(final HashMap<Sequence, Double> sequences,
-			final HashMap<Sequence, Double> intMap) {
+													  final HashMap<Sequence, Double> intMap) {
 
 		final Ordering<Sequence> comparator = Ordering.natural().reverse().onResultOf(Functions.forMap(sequences))
 				.compound(Ordering.natural().reverse().onResultOf(Functions.forMap(intMap)))
@@ -464,7 +464,7 @@ public abstract class PAMCore {
 	 * where |z_S = 1| is calculated by pi_S*|T| and |T : S in T| = supp(S)
 	 */
 	public static HashMap<Sequence, Double> calculateInterestingness(final HashMap<Sequence, Double> sequences,
-			final TransactionDatabase transactions) {
+																	 final TransactionDatabase transactions) {
 
 		final HashMap<Sequence, Double> interestingnessMap = new HashMap<>();
 
@@ -563,7 +563,7 @@ public abstract class PAMCore {
 				if (item >= 0) { // ignore end of itemset/sequence tags
 					final Sequence seq = new Sequence(item);
 					PAMCore.recursiveSetOccurrence(seq, seenItems); // set
-																	// occurrence
+					// occurrence
 					seenItems.add(seq); // add item to seen
 				}
 			}

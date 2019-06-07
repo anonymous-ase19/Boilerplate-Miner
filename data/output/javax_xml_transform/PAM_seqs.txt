@@ -1,4 +1,4 @@
-prob: 0.46667
+prob: 0.45000
 [javax.xml.transform.stream.StreamSource.<init>]
 
 prob: 0.21667
@@ -7,11 +7,11 @@ prob: 0.21667
 prob: 0.18333
 [javax.xml.transform.stream.StreamResult.<init>]
 
-prob: 0.13333
-[javax.xml.transform.TransformerFactory.newTransformer]
-
 prob: 0.11667
 [javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.transform]
+
+prob: 0.10000
+[javax.xml.transform.TransformerFactory.newTransformer]
 
 prob: 0.08333
 [javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.Transformer.transform]
@@ -22,23 +22,29 @@ prob: 0.08333
 prob: 0.06667
 [javax.xml.transform.sax.SAXSource.<init>]
 
-prob: 0.06667
-[javax.xml.transform.TransformerFactory.newInstance]
-
-prob: 0.05000
-[javax.xml.transform.TransformerException.getMessage]
-
 prob: 0.05000
 [javax.xml.transform.dom.DOMSource.<init>]
 
-prob: 0.03333
-[javax.xml.transform.stream.StreamSource.<init>]
+prob: 0.05000
+[javax.xml.transform.TransformerFactory.newInstance]
 
 prob: 0.03333
 [javax.xml.transform.stream.StreamResult.getWriter]
 
 prob: 0.03333
+[javax.xml.transform.TransformerException.getMessage]
+
+prob: 0.03333
 [javax.xml.transform.Transformer.transform]
+
+prob: 0.01667
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.getName, javax.xml.transform.TransformerFactory.newInstance]
+
+prob: 0.01667
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.setFeature, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.Transformer.setErrorListener]
+
+prob: 0.01667
+[javax.xml.transform.sax.SAXSource.sourceToInputSource, javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.sax.SAXTransformerFactory.setFeature, javax.xml.transform.Source.getClass, javax.xml.transform.TransformerException.<init>]
 
 prob: 0.01667
 [javax.xml.transform.TransformerException, org.xml.sax.SAXException, javax.xml.parsers.ParserConfigurationException, java.io.IOException.toString]
@@ -47,10 +53,7 @@ prob: 0.01667
 [javax.xml.transform.TransformerException, org.xml.sax.SAXException, javax.xml.parsers.ParserConfigurationException, java.io.IOException.getLocalizedMessage]
 
 prob: 0.01667
-[javax.xml.transform.stax.StAXSource.<init>]
-
-prob: 0.01667
-[javax.xml.transform.stream.StreamSource.getInputStream]
+[javax.xml.transform.stream.StreamSource.<init>, javax.xml.transform.stream.StreamSource.<init>, javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.sax.SAXSource.<init>, javax.xml.transform.stream.StreamSource.getInputStream]
 
 prob: 0.01667
 [javax.xml.transform.stream.StreamResult.getWriter]
@@ -59,31 +62,25 @@ prob: 0.01667
 [javax.xml.transform.stream.StreamResult.getOutputStream]
 
 prob: 0.01667
-[javax.xml.transform.sax.SAXSource.sourceToInputSource, javax.xml.transform.sax.SAXSource.<init>, javax.xml.transform.TransformerException.<init>]
-
-prob: 0.01667
-[javax.xml.transform.TransformerConfigurationException.getMessage]
-
-prob: 0.01667
-[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.setFeature, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.TransformerFactory.setAttribute, javax.xml.transform.Transformer.setErrorListener]
-
-prob: 0.01667
-[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.TransformerFactory.getName, javax.xml.transform.TransformerFactory.newInstance]
-
-prob: 0.01667
-[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.sax.SAXTransformerFactory.setFeature, javax.xml.transform.Source.getClass]
-
-prob: 0.01667
-[javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.TransformerException.getMessageAndLocation]
+[javax.xml.transform.stax.StAXSource.<init>]
 
 prob: 0.01667
 [javax.xml.transform.TransformerException.getLocalizedMessage]
 
 prob: 0.01667
-[javax.xml.transform.TransformerFactory.setFeature]
+[javax.xml.transform.TransformerFactory.newTransformer, javax.xml.transform.TransformerConfigurationException.getMessage, javax.xml.transform.TransformerException.getMessage]
+
+prob: 0.01667
+[javax.xml.transform.Transformer.setOutputProperty, javax.xml.transform.TransformerException.getMessageAndLocation]
+
+prob: 0.01667
+[javax.xml.transform.TransformerFactory.setFeature, javax.xml.transform.TransformerFactory.newTransformer]
 
 prob: 0.01667
 [javax.xml.transform.TransformerFactory.setAttribute]
+
+prob: 0.01667
+[javax.xml.transform.stream.StreamSource.<init>]
 
 prob: 0.01667
 [javax.xml.transform.Transformer.setOutputProperty]

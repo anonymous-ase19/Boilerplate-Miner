@@ -15,7 +15,7 @@ javax.xml.transform
 javax.swing.JFrame
 ...
 ```
-After this step, you will see directories under ```Output directory``` for each target API, ```javax_xml_transform```, each of which contains symlinks to client code files.
+After this step, you will see directories under [output directory], ```data/source```, for each target API, each of which contains symlinks to client code files using the target API.
 
 ```
 $ python3 generateCorpora.py -i data/repos/ -o data/source/ -p 8 -a data/api_list.txt
@@ -31,7 +31,7 @@ This step is to extract API calls from the set of client code files using the ta
 ```
 $ java -jar APICallExtractor.jar -lf data/source/ -of data/calls/ -pn javax.xml.transform -sn 123
 ```
-* **-lf**  &nbsp;  Client code source directory (from Step 0)
+* **-lf**  &nbsp;  Client code source directory (output directory of Step 0)
 * **-of**  &nbsp;  Output directory
 * **-pn**  &nbsp;  Package name
 * **-sn**  &nbsp;  Sampling number (optional)
@@ -45,28 +45,27 @@ It will return ```javax_xml_transform.arff``` which contains data about 1) calle
 
 #### Step 2: Running PAM
 ```
-$ java -jar pam.jar -f data/calls/javax_xml_transform.arff -sd data/source/javax_xml_transform/ -o data/output/javax_xml_transform/
+$ java -jar pam.jar -f data/calls/javax_xml_transform.arff -sd data/source/ -o data/output/
 
 ```
-* **-f**  &nbsp;  arff file from API extraction (from Step 1)
+* **-f**  &nbsp;  arff file from API extraction (output file from Step 1)
 * **-sd**  &nbsp;  Source directory
 * **-o**  &nbsp;  Output directory
 
 #### Step 3: Removing Spurious Patterns
 ```
-$ python removeSubSequences.py -i data/output/javax_xml_transform/PAM_logs.log -o data/output/javax_xml_transform/reduced_PAM_logs.log -mn 6
+$ python removeSubSequences.py -i data/output/javax_xml_transform/MARBLE_logs.log -o data/output/javax_xml_transform/reduced_MARBLE_logs.log -mn 6
 ```
 * **-i**  &nbsp;  Raw PAM log file
 * **-o**  &nbsp;  Output log file after removing spurious patterns
-* **-mn** &nbsp;  
+* **-mn** &nbsp;  Minimum support
 
 #### Step 4: AST Comparision
 ```
-$ java -jar ASTComparison.jar -f data/output/javax_xml_transform/reduced_PAM_logs.log -sd data/source/javax_xml_transform/ -o data/output/javax_xml_transform/diff/ -ps 0 -pl 6 -p 2
+$ java -jar ASTComparison.jar -id data/output/javax_xml_transform/ -sd data/source/ -ps 0 -pl 6 -p 2
 ```
-* **-f**  &nbsp;  PAM log file after removing spurious patterns
-* **-sd**  &nbsp;  Client code source directory
-* **-o**  &nbsp;  Output directory
+* **-id**  &nbsp;  Input directory containing PAM log file
+* **-sd**  &nbsp;  Source directory
 * **-ps, -pl**  &nbsp;  Start and the last index of PAM patterns to set the range of AST comparision
 * **p** &nbsp; Number of threads to use
 

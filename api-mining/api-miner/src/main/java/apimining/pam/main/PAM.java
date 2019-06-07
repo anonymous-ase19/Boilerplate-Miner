@@ -38,16 +38,17 @@ public class PAM extends PAMCore {
 	public static class Parameters {
 
 		@Parameter(names = { "-f", "--file" }, description = "ARFF file with call sequences")
-		String arffFile = "/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Sequences/Datasets/API/examples/all/calls/hadoop.arff";
-		
+//		String arffFile = "/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Sequences/Datasets/API/examples/all/calls/hadoop.arff";
+		String arffFile = "";
+
 		/** dayen: add source file directory to print the method implementation of patterns */
 		@Parameter(names = { "-sd", "--source" }, description = "Source code directory")
-		String sourceDir = "/Users/dayen/eclipse-workspace/api-mining-master/datasets/source/javax_xml_transform";
+//		String sourceDir = "/Users/dayen/eclipse-workspace/api-mining-master/datasets/source/";
+		String sourceDir = "";
 
-		@Parameter(names = { "-o", "--outFile" }, description = "Output File")
-//		String outFile = "/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Sequences/Datasets/API/examples/all/hadoop/PAM_seqs.txt";
-		/** dayen: when printing files containing the patterns, input folder dir instead of the file name */
-		String outFile = "/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Sequences/Datasets/API/examples/all/hadoop";
+		@Parameter(names = { "-od", "--outDir" }, description = "Output directory")
+//		String outDir = "/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Sequences/Datasets/API/examples/all/";
+		String outDir = "";
 
 		@Parameter(names = { "-s", "--maxSteps" }, description = "Max structure steps")
 		int maxStructureSteps = 100_000;
@@ -56,7 +57,7 @@ public class PAM extends PAMCore {
 		int maxEMIterations = 10_000;
 
 		@Parameter(names = { "-l", "--log-level" }, description = "Log level", converter = LogLevelConverter.class)
-		Level logLevel = Level.FINE;
+		Level logLevel = Level.INFO;
 
 		@Parameter(names = { "-r", "--runtime" }, description = "Max Runtime (min)")
 		long maxRunTime = 72 * 60; // 12hrs
@@ -66,6 +67,9 @@ public class PAM extends PAMCore {
 
 		@Parameter(names = { "-v", "--verbose" }, description = "Log to console instead of logfile")
 		boolean verbose = false;
+
+		@Parameter(names = { "-p", "--process" }, description = "Number of Processes")
+		String numThread = "8";
 	}
 
 	public static void main(final String[] args) throws Exception {
@@ -77,28 +81,37 @@ public class PAM extends PAMCore {
 		final Parameters params = new Parameters();
 		final JCommander jc = new JCommander(params);
 
-		/** dayen: limit the number of threads */
-		System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "16");
-		
 		try {
 			jc.parse(args);
-
-			// Set loglevel, runtime, timestamp and log file
-			LOG_LEVEL = params.logLevel;
-			MAX_RUNTIME = params.maxRunTime * 60 * 1_000;
-			File logFile = null;
-			if (!params.verbose)
-				logFile = Logging.getLogFileName("ISM", params.timestampLog, LOG_DIR, params.arffFile);
-
-			// Mine interesting API call sequences
-			System.out.println("Processing " + FilenameUtils.getBaseName(params.arffFile) + "...");
-			mineAPICallSequences(params.arffFile, params.outFile, inferenceAlg, params.maxStructureSteps,
-					params.maxEMIterations, logFile, params.sourceDir);
-
 		} catch (final ParameterException e) {
 			System.out.println(e.getMessage());
 			jc.usage();
 		}
+		/** dayen: limit the number of threads */
+		System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", params.numThread);
+
+		// Set loglevel, runtime, timestamp and log file
+		LOG_LEVEL = params.logLevel;
+		MAX_RUNTIME = params.maxRunTime * 60 * 1_000;
+		String[] apiNameSplit = params.arffFile.split(".arff")[0].split("/");
+		String sourceDir = params.sourceDir + apiNameSplit[apiNameSplit.length-1] + "/";
+		String outDir = params.outDir + apiNameSplit[apiNameSplit.length-1] + "/";
+		File outDirFile = new File(outDir);
+		if (! outDirFile.exists()){
+			outDirFile.mkdir();
+		}
+
+		File logFile = null;
+		if (!params.verbose) {
+			File LOG_DIR = new File(outDir);
+			logFile = new File(outDir + "MARBLE_logs.log");
+		}
+
+		// Mine interesting API call sequences
+		System.out.println("Processing " + FilenameUtils.getBaseName(params.arffFile) + "...");
+		mineAPICallSequences(params.arffFile, outDir+"PAM_seqs.txt", inferenceAlg, params.maxStructureSteps,
+				params.maxEMIterations, logFile, sourceDir);
+
 
 	}
 
@@ -109,11 +122,11 @@ public class PAM extends PAMCore {
 	 *            API calls in ARF Format. Attributes are fqCaller and fqCalls
 	 *            as space separated string of API calls.
 	 */
-	
+
 	/** dayen: added sourceDir param to output source code implementation of patterns */
 	public static void mineAPICallSequences(final String arffFile, final String outFile,
-			final InferenceAlgorithm inferenceAlgorithm, final int maxStructureSteps, final int maxEMIterations,
-			final File logFile, final String sourceDir) throws Exception {
+											final InferenceAlgorithm inferenceAlgorithm, final int maxStructureSteps, final int maxEMIterations,
+											final File logFile, final String sourceDir) throws Exception {
 
 		final File fout = new File(outFile);
 		if (fout.getParentFile() != null)
@@ -129,31 +142,26 @@ public class PAM extends PAMCore {
 		System.out.print("  Mining interesting sequences... ");
 		/** dayen: add last sequences into transaction meta data */
 //		/** dayen: return sequences and filenames that the pattern occurred, instead of the probability */
-//		final Map<Sequence, List<String>> sequencesFiles = PAMCore.mineInterestingSequences(transactionDB, inferenceAlgorithm,
-//				maxStructureSteps, maxEMIterations, logFile, transactionMetaInfos, dictionary);
 		final Map<Sequence, Double> sequences = PAMCore.mineInterestingSequences(transactionDB, inferenceAlgorithm,
 				maxStructureSteps, maxEMIterations, logFile, transactionMetaInfos, dictionary);
-//		final Map<Sequence, Double> sequences = PAMCore.mineInterestingSequences(transactionDB, inferenceAlgorithm,
-//				maxStructureSteps, maxEMIterations, logFile, transactionMetaInfos);
 		transactionDB.delete();
 		System.out.println("done.");
 
 		decodeInterestingSequences(sequences, dictionary, outFile);
-//		decodeInterestingSequencesWithFiles(sequencesFiles, dictionary, outFile, sourceDir);
 	}
 
 	private static void generateTransactionDatabase(final String arffFile, final BiMap<String, Integer> dictionary,
-			final File transactionDB, final ArrayList<TransactionMetaInfo> transactionMetaInfos) throws IOException {
+													final File transactionDB, final ArrayList<TransactionMetaInfo> transactionMetaInfos) throws IOException {
 
 		int mID = 0;
 		boolean found = false;
 		final PrintWriter out = new PrintWriter(transactionDB);
 		final LineIterator it = FileUtils.lineIterator(new File(arffFile));
-		
+
 		/** dayen: save meta_data of each transaction */
 		int tID = 0;
 //		boolean isOdd = true;
-		
+
 		while (it.hasNext()) {
 			final String line = it.nextLine();
 
@@ -166,10 +174,10 @@ public class PAM extends PAMCore {
 //				else {
 //					isOdd = true;
 //				}
-				
+
 				/** dayen: save meta_data of each transaction */
 				transactionMetaInfos.add(new TransactionMetaInfo(line));
-				
+
 //				for (final String raw_call : line.split(",")[1].replace("\'", "").split(" ")) {
 				for (final String raw_call : line.split("','")[3].replace("|", "").replace("'", "").split(" ")) {
 					final String call = raw_call.trim();
@@ -199,7 +207,7 @@ public class PAM extends PAMCore {
 	}
 
 	private static void decodeInterestingSequences(final Map<Sequence, Double> sequences,
-			final BiMap<String, Integer> dictionary, final String outFile) throws IOException {
+												   final BiMap<String, Integer> dictionary, final String outFile) throws IOException {
 
 		final PrintWriter out = new PrintWriter(outFile);
 		for (final Entry<Sequence, Double> entry : sequences.entrySet()) {
@@ -212,16 +220,16 @@ public class PAM extends PAMCore {
 			}
 			out.print("]");
 			/** dayen: print meta information of transactions which contain this pattern */
-			
+
 			out.println();
 			out.println();
 		}
 		out.close();
 
 	}
-	
+
 	private static void decodeInterestingSequencesWithFiles(final Map<Sequence, List<String>> sequences,
-			final BiMap<String, Integer> dictionary, final String outDir, final String sourceDir) throws IOException {
+															final BiMap<String, Integer> dictionary, final String outDir, final String sourceDir) throws IOException {
 
 		final PrintWriter out = new PrintWriter(String.join("/", outDir, "PAM_eg_seqs.txt"));
 		int patternIndex = -1;
@@ -247,7 +255,7 @@ public class PAM extends PAMCore {
 			for (final String file_caller: entry.getValue()) {
 				final String fileName = file_caller.split("-----")[0];
 				final String callerName = file_caller.split("-----")[1];
-				
+
 				String outputfile_dir = outDir + "/" + Integer.toString(patternIndex) + "/" + file_caller + ".java";
 				if(outputfile_dir.length() > 200) {
 					outputfile_dir = outputfile_dir.substring(0, 200) + ".java";
@@ -255,13 +263,13 @@ public class PAM extends PAMCore {
 				final File patternEgFile = new File(outputfile_dir);
 				patternEgFile.getParentFile().mkdirs();
 				final PrintWriter fileOut = new PrintWriter(patternEgFile);
-				
+
 				final File methodFile = new File(sourceDir + "/" + fileName + ".java");
 				CompilationUnit ast = ASTVisitors.getAST(methodFile);
 				final MethodPrintVisitor mpv = new MethodPrintVisitor(ast);
 				mpv.process(ast);
 				final Map<String, String> methodImplementation = mpv.methodImplementation;
-				
+
 				for (final Entry<String, String> mi : methodImplementation.entrySet()) {
 					if (callerName.contains(mi.getKey())) {
 						fileOut.print("//");
@@ -271,11 +279,11 @@ public class PAM extends PAMCore {
 					}
 				}
 				fileOut.close();
-				
+
 			}
 			out.println();
 			out.println();
-			
+
 		}
 		out.close();
 
