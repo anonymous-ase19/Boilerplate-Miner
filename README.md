@@ -31,8 +31,8 @@ This step is to extract API calls from the set of client code files using the ta
 ```
 $ java -jar APICallExtractor.jar -lf data/source/ -of data/calls/ -pn javax.xml.transform -sn 123
 ```
-* **-lf**  &nbsp;  Client code source directory (output directory of Step 0)
-* **-of**  &nbsp;  Output directory
+* **-sd**  &nbsp;  Client code source directory (output directory of Step 0)
+* **-od**  &nbsp;  Output directory
 * **-pn**  &nbsp;  Package name
 * **-sn**  &nbsp;  Sampling number (optional)
 
@@ -47,11 +47,10 @@ It will return ```javax_xml_transform.arff``` which contains data about 1) calle
 This step runs PAM (Probabilistic API Miner) to mine interesting API patterns from the list of API call sequences (We adjusted [PAM's public implementation](https://github.com/mast-group/api-mining)). It returns two files, ```PAM_seqs.txt``` and ```MARBLE_logs.log```. ```PAM_seqs.txt``` is the result file of PAM containing a list of usage patterns (i.e., sequences of API calls), and ```MARBLE_logs.log``` has richer information about the usgae patterns, which will be used in the following steps.
 ```
 $ java -jar pam.jar -f data/calls/javax_xml_transform.arff -sd data/source/ -o data/output/
-
 ```
 * **-f**  &nbsp;  arff file from API extraction (output file from Step 1)
 * **-sd**  &nbsp;  Source directory
-* **-o**  &nbsp;  Output directory
+* **-od**  &nbsp;  Output directory
 
 #### Step 3: Removing Spurious Patterns
 This step filters API usage patterns that are redundant or rare to reduce the false positive boilerplate candidates returned later.
@@ -69,7 +68,7 @@ $ java -jar ASTComparison.jar -f data/output/javax_xml_transform/reduced_MARBLE_
 ```
 * **-f**  &nbsp;  PAM log file after removing spurious patterns (from step 3)
 * **-sd**  &nbsp;  Client code source directory
-* **-o**  &nbsp;  Output directory
+* **-od**  &nbsp;  Output directory
 * **-ps, -pl**  &nbsp;  Start and the last index of PAM patterns to set the range of AST comparision (optional)
 * **p** &nbsp; Number of threads to use (optional)
 

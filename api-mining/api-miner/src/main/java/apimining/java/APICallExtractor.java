@@ -35,7 +35,7 @@ public class APICallExtractor {
 	/** Main function parameters */
 	public static class Parameters {
 
-		@Parameter(names = { "-lf", "--libFolder" }, description = "Source Folder")
+		@Parameter(names = { "-sd", "--sourceDir" }, description = "Source Folder", required = true)
 		String libFolder = "";
 		
 		@Parameter(names = { "-nf", "--namespaceFolder" }, description = "Namespace Folder")
@@ -44,15 +44,17 @@ public class APICallExtractor {
 		@Parameter(names = { "-ia", "--interestingAPIs" }, description = "Interesting APIs")
 		ArrayList<String> interestingAPIs = new ArrayList<String>();
 
-		@Parameter(names = { "-pn", "--packageNames" }, description = "Package Names")
+		@Parameter(names = { "-pn", "--packageNames" }, description = "Package Names", required = true)
 		String packageName = "";
 
-		@Parameter(names = { "-of", "--outFolder" }, description = "Output Folder")
+		@Parameter(names = { "-od", "--outDir" }, description = "Output Directory", required = true)
 		String outFolder = "";
 		
 		@Parameter(names = { "-sn", "--sampleNumber"}, description = "Number of Samples")
 		Integer numSample = -1;
 
+		@Parameter(names = { "-p", "--process" }, description = "Number of Processes")
+		String numThread = "8";
 
 	}
 
@@ -62,9 +64,6 @@ public class APICallExtractor {
 		final Parameters params = new Parameters();
 		final JCommander jc = new JCommander(params);
 
-		/** dayen: limit the number of threads */
-		System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "8");
-		
 		try {
 			jc.parse(args);
 
@@ -72,7 +71,10 @@ public class APICallExtractor {
 			System.out.println(e.getMessage());
 			jc.usage();
 		}
-		
+		/** dayen: limit the number of threads */
+		System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", params.numThread);
+
+
 		String[] interestingAPIs = params.interestingAPIs.toArray(new String[0]);
 		String packageName = params.packageName;
 		String projFolder = packageName.replace(".", "_");

@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Set;
 import java.util.Map.Entry;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
@@ -22,30 +21,18 @@ import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
 
-import apimining.pam.main.PAM.LogLevelConverter;
 import at.unisalzburg.dbresearch.apted.costmodel.PerEditOperationStringNodeDataCostModel;
-import at.unisalzburg.dbresearch.apted.costmodel.StringUnitCostModel;
 import at.unisalzburg.dbresearch.apted.distance.APTED;
 import at.unisalzburg.dbresearch.apted.node.Node;
 import at.unisalzburg.dbresearch.apted.node.StringNodeData;
 import at.unisalzburg.dbresearch.apted.parser.BracketStringInputParser;
 import at.unisalzburg.dbresearch.apted.parser.InputParser;
-import spoon.Launcher;
-import spoon.reflect.CtModel;
 
-import com.github.gumtreediff.actions.ActionGenerator;
-import com.github.gumtreediff.actions.model.Action;
 import com.github.gumtreediff.client.Run;
 import com.github.gumtreediff.gen.Generators;
 import com.github.gumtreediff.gen.TreeGenerator;
-import com.github.gumtreediff.io.ActionsIoUtils;
 import com.github.gumtreediff.io.TreeIoUtils;
 import com.github.gumtreediff.io.TreeIoUtils.TreeSerializer;
-import com.github.gumtreediff.io.TreeIoUtils.XmlInternalGenerator;
-import com.github.gumtreediff.matchers.Mapping;
-import com.github.gumtreediff.matchers.MappingStore;
-import com.github.gumtreediff.matchers.Matcher;
-import com.github.gumtreediff.matchers.Matchers;
 import com.github.gumtreediff.tree.ITree;
 import com.github.gumtreediff.tree.TreeContext;
 import com.github.gumtreediff.utils.Pair;
@@ -54,27 +41,25 @@ public class ASTComparison {
 	
 	public static class Parameters {
 
-		@Parameter(names = { "-f", "--file" }, description = "Log file with usage patterns and the clicnet code list")
-		String logFile = "/Users/dayen/eclipse-workspace/api-mining-master/output/all/javax_xml_transform/pam/PAM_logs.log";
-//		String logFile = "/Users/dayen/Documents/Research/API/Mining/serverMining/PAM_logs.log";
+		@Parameter(names = { "-f", "--file" }, description = "Log file with usage patterns and the clicnet code list", required = true)
+//		String logFile = "/Users/dayen/eclipse-workspace/api-mining-master/output/all/javax_xml_transform/pam/PAM_logs.log";
+		String logFile = "";
 		
 		/** dayen: add source file directory to print the method implementation of patterns */
-		@Parameter(names = { "-sd", "--source" }, description = "Source code directory")
-		String sourceDir = "/Users/dayen/eclipse-workspace/api-mining-master/datasets/source/javax_xml_transform/";
+		@Parameter(names = { "-sd", "--source" }, description = "Source code directory", required = true)
+//		String sourceDir = "/Users/dayen/eclipse-workspace/api-mining-master/datasets/source/javax_xml_transform/";
+		String sourceDir = "";
 
-		@Parameter(names = { "-o", "--outDIr" }, description = "Output directory")
-//		String outFile = "/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Sequences/Datasets/API/examples/all/hadoop/PAM_seqs.txt";
+		@Parameter(names = { "-od", "--outDIr" }, description = "Output directory", required = true)
 		/** dayen: when printing files containing the patterns, input folder dir instead of the file name */
-		String outDir = "/Users/dayen/eclipse-workspace/api-mining-master/output/all/javax_xml_transform/pam/diff/";
+//		String outDir = "/Users/dayen/eclipse-workspace/api-mining-master/output/all/javax_xml_transform/pam/diff/";
+		String outDir = "";
+
+		@Parameter(names = { "-ps", "--patternStart" }, description = "Top n patterns to evaluate")
+		int patternStart = 0;
 
 		@Parameter(names = { "-pl", "--patternLimit" }, description = "Top n patterns to evaluate")
-		int patternLimit = 9;
-		
-		@Parameter(names = { "-ps", "--patternStart" }, description = "Top n patterns to evaluate")
-		int patternStart = 7;
-		
-		@Parameter(names = { "-pb", "--projectBiasThreshold" }, description = "Pattern is biased if shown less than this number.")
-		int biasThreshold = 3;
+		int patternLimit = -1;
 		
 		@Parameter(names = {"-p", "--processor"}, description = "Number of Threads")
 		int numThread = 1;
@@ -98,7 +83,7 @@ public class ASTComparison {
 			jc.parse(args);
 
 			System.out.println("Processing " + FilenameUtils.getBaseName(params.logFile) + "...");
-			compareASTs(params.logFile, params.sourceDir, params.outDir, params.patternStart, params.patternLimit, params.numThread, params.biasThreshold, params.max_api_calls);
+			compareASTs(params.logFile, params.sourceDir, params.outDir, params.patternStart, params.patternLimit, params.numThread, params.max_api_calls);
 
 		} catch (final ParameterException e) {
 			System.out.println(e.getMessage());
@@ -111,12 +96,15 @@ public class ASTComparison {
 	}
 	
 	private static void compareASTs(final String logFile, final String sourceDir, final String outDir, 
-			final int patternStart, final int patternLimit, final int numThread, final int biasThreshold, final int max_api_calls) throws Exception {
+			final int patternStart, int patternLimit, final int numThread, final int max_api_calls) throws Exception {
 		HashMap<Integer, APIPattern> dictionary = new HashMap<Integer, APIPattern>();
 		readLogFile(logFile, dictionary);
 		
 		Run.initGenerators();
 
+		if (patternLimit == -1) {
+			patternLimit = dictionary.size();
+		}
 		for (final Entry<Integer, APIPattern> entry : dictionary.entrySet()) {
 			if (entry.getKey() < patternStart) {
 				continue;
@@ -124,16 +112,21 @@ public class ASTComparison {
 			if (entry.getKey() > patternLimit) {
 				break;
 			}
-			
+			File outFolder = new File(outDir);
+			if (! outFolder.exists()){
+				outFolder.mkdir();
+			}
+			outFolder = new File(outDir + "/AST");
+			if (! outFolder.exists()){
+				outFolder.mkdir();
+			}
+
 			final File sf = new File(outDir + "Similarity_" + Integer.toString(entry.getKey()) + ".txt");
 			final PrintWriter sOut = new PrintWriter(sf);
 			
 			final File el = new File(outDir + "pattern_" + Integer.toString(entry.getKey()) + ".edgelist");
 			final PrintWriter eOut = new PrintWriter(el);
-			
-//			final File lf = new File(outDir + "positions_" + Integer.toString(entry.getKey()) + ".txt");
-//			final PrintWriter lOut = new PrintWriter(lf);
-//			
+
 			final APIPattern apiPattern = entry.getValue();
 			final ArrayList<ClientMethod> client_methods = new ArrayList<ClientMethod>();
 			sOut.println(apiPattern.getPatternInString());
@@ -142,11 +135,6 @@ public class ASTComparison {
 			System.out.println();
 			apiPattern.printPattern();
 			final ArrayList<String> curPattern = apiPattern.getPattern();
-			
-//			if (curPattern.size() == 1) {
-//				continue;
-//			}
-
 			
 			HashSet<String> fileSet = new HashSet<String>();
 			
@@ -160,40 +148,7 @@ public class ASTComparison {
 					client_methods.add(apiPattern.getClientMethod().get(i));
 				}
 			}
-			
-			
-			if (client_methods.size() < biasThreshold) {
-				System.out.println("This pattern is biased. ");
-				continue;
-			}
-			
-//			for (ClientMethod srcMethod : client_methods) {
-//				int i = client_methods.indexOf(srcMethod);
-//				for (ClientMethod dstMethod: client_methods.subList(i, client_methods.size())) {
-//					Pair<String, Double> result = ASTEDClientFiles(sourceDir, outDir, apiPattern.getID(),
-//							srcMethod.getFileName(), dstMethod.getFileName(), curPattern);
-//				}
-//			}
-//			
-//			for (ClientMethod srcMethod: client_methods) {
-//				int i = client_methods.indexOf(srcMethod);
-//				for (ClientMethod dstMethod: client_methods.subList(i, client_methods.size())) {
-//					Pair<String, Double> result = null;
-//					try {
-//						result = ASTEDClientFiles(sourceDir, outDir, apiPattern.getID(),
-//								srcMethod.getFileName(), dstMethod.getFileName(), srcMethod.getCallerName(), dstMethod.getCallerName(), curPattern);
-//					} catch (IOException e) {
-//						e.printStackTrace();
-//					} catch (TreeTraversalException e) {
-//						e.printStackTrace();
-//					}
-//					if (result != null) {
-//						sOut.print(result.first);
-//						eOut.print(String.format("%d	%d	%f%n", i, client_methods.indexOf(dstMethod), result.second));
-//					}
-//				}
-//				 
-//			}
+
 			
 			HashMap<String, Pair<ITree, TreeContext>> AST_map = new HashMap<String, Pair<ITree, TreeContext>>();
 			for (ClientMethod method: client_methods) {
@@ -210,37 +165,20 @@ public class ASTComparison {
 			
 			
 			client_methods.stream().forEach(srcMethod -> {
-//				Pair <ITree, TreeContext> src_subtree_pair = getSubTree(sourceDir,  outDir, srcMethod.getFileName(), srcMethod.getCallerName());
-//				ITree srcTree = src_subtree_pair.first;
-//				TreeContext tc1 = src_subtree_pair.second;
-//				ITree srcTree = AST_map.get(srcMethod.getFileName()).first;
-//				TreeContext tc1 = AST_map.get(srcMethod.getFileName()).second;
-
 				ArrayList<Pair<String, String>> subtrees1 = subtree_embeddings_map.get(srcMethod.getFileName());
 				
 				String srcFileName = srcMethod.getFileName();
 				int i = client_methods.indexOf(srcMethod);
 				Stream<ClientMethod> stream = StreamSupport.stream(client_methods.subList(i+1,  client_methods.size()).spliterator(), true);
 				stream.forEach(dstMethod -> {
-//					Double result = 0.0;
 					Pair<Double, String> result = new Pair<Double, String>(0.0, "");
-					
-//					Pair <ITree, TreeContext> dst_subtree_pair = getSubTree(sourceDir,  outDir, dstMethod.getFileName(), dstMethod.getCallerName());
-//					ITree dstTree = dst_subtree_pair.first;
-//					TreeContext tc2 = dst_subtree_pair.second;
-//					ITree dstTree = AST_map.get(dstMethod.getFileName()).first;
-//					TreeContext tc2 = AST_map.get(dstMethod.getFileName()).second;
+
 					String dstFileName = dstMethod.getFileName();
 					
 					ArrayList<Pair<String, String>> subtrees2 = subtree_embeddings_map.get(dstMethod.getFileName());
 				
 					try {
 						result = fasterASTEDClientFiles(subtrees1, subtrees2);
-//						result = fasterASTEDClientFiles(sourceDir, outDir, apiPattern.getID(), srcTree, dstTree, tc1, tc2, curPattern);
-//						System.out.println(srcMethod.getFileName());
-//						System.out.println(dstMethod.getFileName());
-//						System.out.println(result);
-//						System.out.println("");
 					} catch (IOException e) {
 						e.printStackTrace();
 					} catch (TreeTraversalException e) {
@@ -251,7 +189,6 @@ public class ASTComparison {
 							System.out.print(String.format("%s%n%s%n%s%n%n", srcMethod.getFileName(), dstMethod.getFileName(), "The distance was 0, check the files!"));
 						}
 						sOut.print(String.format("%s%n%s%n%f%n%s%n", srcMethod.getFileName(), dstMethod.getFileName(), result.first, result.second));
-//						eOut.print(String.format("%d	%d	%d%n", i, client_methods.indexOf(dstMethod), result.second));
 						eOut.print(String.format("%d	%d	%f%n", i, client_methods.indexOf(dstMethod), result.first));
 					}
 					else {
@@ -259,38 +196,6 @@ public class ASTComparison {
 					}
 				});
 			});
-			
-//			client_methods.stream().forEach(srcMethod -> {
-//				int i = client_methods.indexOf(srcMethod);
-//				Stream<ClientMethod> stream = StreamSupport.stream(client_methods.subList(i+1,  client_methods.size()).spliterator(), true);
-//				stream.forEach(dstMethod -> {
-////					Pair<String, Integer> result = null;
-//					Pair<String, Double> result = null;
-//					try {
-//						result = ASTEDClientFiles(sourceDir, outDir, apiPattern.getID(),
-//								srcMethod.getFileName(), dstMethod.getFileName(), srcMethod.getCallerName(), dstMethod.getCallerName(), curPattern);
-////						result = compareClientFile(sourceDir, outDir, apiPattern.getID(),
-////								srcMethod.getFileName(), dstMethod.getFileName(), curPattern);
-//					} catch (IOException e) {
-//						// TODO Auto-generated catch block
-//						e.printStackTrace();
-//					} catch (TreeTraversalException e) {
-//						// TODO Auto-generated catch block
-//						e.printStackTrace();
-//					}
-//					if (result != null) {
-//						if (result.second == -1.0) {
-//							System.out.println("Could not find matching sequence.");
-//						}
-//						else {
-//							sOut.print(result.first);
-//	//						eOut.print(String.format("%d	%d	%d%n", i, client_methods.indexOf(dstMethod), result.second));
-//							eOut.print(String.format("%d	%d	%f%n", i, client_methods.indexOf(dstMethod), result.second));
-//						}
-//					}
-//					
-//				});
-//			});
 
 			sOut.println("File Index Table");
 			sOut.println();
@@ -328,7 +233,6 @@ public class ASTComparison {
 		interestingTags.add("IfStatement");
 		interestingTags.add("SwitchCase");
 		interestingTags.add("SwitchStatement");
-//		interestingTags.add("ThrowStatement");
 		interestingTags.add("TryStatement");
 		interestingTags.add("WhileStatement");
 		interestingTags.add("MethodDeclaration");
@@ -336,7 +240,6 @@ public class ASTComparison {
 		ArrayList<ITree> firstCalls = matchMap.get(getSimpleName(curPattern.get(0)));
 		for (int i=0; i<firstCalls.size(); i++) {
 			ITree cur_node = firstCalls.get(i);
-//			int max_api_calls = 20;
 			while ((cur_node.getId() != tree.getId()) && (!interestingTags.contains(tc.getTypeLabel(cur_node)))){
 				if (getNumMethodCalls(cur_node.getParent()) > max_api_calls) {
 					int num_method_calls = 0;
@@ -380,12 +283,7 @@ public class ASTComparison {
 				return new ArrayList<ITree>();
 			}
 		}
-		
-//		for (int call_idx = 0; call_idx < curPattern.size(); call_idx++) {
-//			ArrayList<ITree> curPairList = matchMap.get(getSimpleName(curPattern.get(call_idx)));
-//			//sort based on the node idx
-//		}
-		
+
 		ArrayList<ITree> firstCalls = matchMap.get(getSimpleName(curPattern.get(0)));
 		ArrayList<Pair<Integer, Integer>> patternRanges = new ArrayList<Pair<Integer, Integer>>();
 		for (int i=0; i<firstCalls.size(); i++) {
@@ -794,76 +692,6 @@ public class ASTComparison {
 		return st;
 				
 	}
-	
-//	private static ITree getEncompassingSubtreeRange(ITree t, int start_idx, int end_idx, int max_api_calls) {
-//		ITree st = t;
-//		boolean isContinue = true;
-//		
-//		while (isContinue) {
-//			List<ITree> curChildren = st.getChildren();
-//			isContinue = false;
-//			if (curChildren.size() == 1) {
-//				st = curChildren.get(0);
-//				isContinue = true;
-//			}
-//			else if (curChildren.size() == 2) {
-//				if (curChildren.get(1).getId() > end_idx) {
-//					st = curChildren.get(0);
-//					isContinue = true;
-//				}
-//				else if (curChildren.get(0).getId() < start_idx) {
-//					st = curChildren.get(1);
-//					isContinue = true;
-//				}
-//			}
-//			else {
-//				for (int i=1; i<curChildren.size(); i++) {
-//					if (curChildren.get(i-1).getId() < start_idx && curChildren.get(i).getId() > end_idx) {
-//						st = curChildren.get(i);
-//						isContinue = true;
-//						break;
-//					}
-//				}
-//			}
-//		}
-//
-//		if (getNumMethodCalls(st) > max_api_calls) {
-//			int num_method_calls = 0;
-//			List<ITree> siblings = st.getChildren();
-//			List<ITree> new_siblings = new ArrayList<ITree>();
-//			for (int i=0; i<st.getChildren().size(); i++)  {
-//				if (siblings.get(i).getId() > start_idx && siblings.get(i).getId() < end_idx ) {
-//					new_siblings.add(st.getChild(i));
-//				}
-//				else if (i-1 >= 0) {
-//					if (siblings.get(i-1).getId() < end_idx) {
-//						new_siblings.add(st.getChild(i));
-//					}
-//					
-//				}
-//			}
-//			if (new_siblings.size() > 0) {
-//				int sibling_start_idx = st.getChildPosition(new_siblings.get(0));
-//				int sibling_end_idx = st.getChildPosition(new_siblings.get(new_siblings.size()-1));
-//				int margin = 1;
-//				while(num_method_calls < max_api_calls && (sibling_start_idx - margin > 0 || sibling_end_idx + margin < siblings.size())) {
-//					if (sibling_start_idx - margin > 0) {
-//						num_method_calls = num_method_calls + getNumMethodCalls(siblings.get(sibling_start_idx-margin));
-//						new_siblings.add(0, siblings.get(sibling_start_idx-margin));
-//					}
-//					if (sibling_end_idx + margin < siblings.size()) {
-//						num_method_calls = num_method_calls + getNumMethodCalls(siblings.get(sibling_end_idx+margin));
-//						new_siblings.add(siblings.get(sibling_end_idx+margin));
-//					}
-//					margin++;
-//				}
-//				st.setChildren(new_siblings);
-//			}
-//		}
-//		
-//		return st;
-//				
-//	}
 	
 	private static String getSimpleName(String fqname) {
 		String[] fullName = fqname.split("\\.");

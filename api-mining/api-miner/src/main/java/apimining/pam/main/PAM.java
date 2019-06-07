@@ -37,16 +37,16 @@ public class PAM extends PAMCore {
 	/** Main function parameters */
 	public static class Parameters {
 
-		@Parameter(names = { "-f", "--file" }, description = "ARFF file with call sequences")
+		@Parameter(names = { "-f", "--file" }, description = "ARFF file with call sequences", required = true)
 //		String arffFile = "/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Sequences/Datasets/API/examples/all/calls/hadoop.arff";
 		String arffFile = "";
 
 		/** dayen: add source file directory to print the method implementation of patterns */
-		@Parameter(names = { "-sd", "--source" }, description = "Source code directory")
+		@Parameter(names = { "-sd", "--source" }, description = "Source code directory", required = true)
 //		String sourceDir = "/Users/dayen/eclipse-workspace/api-mining-master/datasets/source/";
 		String sourceDir = "";
 
-		@Parameter(names = { "-od", "--outDir" }, description = "Output directory")
+		@Parameter(names = { "-od", "--outDir" }, description = "Output directory", required = true)
 //		String outDir = "/afs/inf.ed.ac.uk/user/j/jfowkes/Code/Sequences/Datasets/API/examples/all/";
 		String outDir = "";
 
