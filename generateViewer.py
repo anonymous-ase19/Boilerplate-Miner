@@ -77,9 +77,7 @@ def generateViewer(input_dir, source_dir, api_name, output_dir, min_nodes, min_s
 				code_list = []
 				similarity_file = "/".join(e.split("/")[:-1]) + "/Similarity_" + e.split("pattern_")[1].replace("edgelist", "txt")
 				sequence, selected_files, num_files, cluster_sum_length, cluster_num_edges, within_similarity, cluster_num_stmts, bp_files = selectFiles(similarity_file, clusters[c], is_pam)
-				print(within_similarity)
 				min_similarity = seq_min_similarity[len(sequence)]
-				print(min_similarity)
 				
 				if best_within_similarity < within_similarity:
 					best_within_similarity = within_similarity
@@ -106,7 +104,6 @@ def generateViewer(input_dir, source_dir, api_name, output_dir, min_nodes, min_s
 					boilerplate_files.extend(bp_files)
 		cluster_html_list.sort(key=lambda tup: tup[1], reverse=True)
 		cluster_htmls = "".join([template.getClusterHtml(x[0][0], x[0][1], x[0][2], x[0][3], x[0][4]) for x in cluster_html_list])
-		print(num_edges)
 		if num_edges > 0 and cluster_htmls != "":
 		# if cluster_htmls != "":
 			# mean length
@@ -115,7 +112,7 @@ def generateViewer(input_dir, source_dir, api_name, output_dir, min_nodes, min_s
 			# pattern_html_list.append((template.getPatternHtml(pattern_name, partition_nums[i], file_nums[i], ", ".join(sequence), cluster_htmls), best_within_similarity))
 			pattern_html_list.append((template.getPatternHtml(pattern_name, partition_nums[i], file_nums[i], ", ".join(sequence), cluster_htmls), num_stmts/num_edges))
 	pattern_html_list.sort(key=lambda tup: tup[1], reverse=True)
-	print("Num patterns")
+	print("Num candidate patterns")
 	print(len(pattern_html_list))
 	api_html = template.getAPIHtml(api_name, "".join([x[0] for x in pattern_html_list]))
 	print("Boilerplate Files")
@@ -197,7 +194,6 @@ def selectFiles(similarity_file, cluster, is_pam):
 	else:
 		for i, f in enumerate(sorted_x):
 			p = ("_____").join(f[0].split("_____")[:-1])
-			print(p)
 			if p not in selected_projects:
 				selected_files.append(f[0])
 				selected_projects.append(p)

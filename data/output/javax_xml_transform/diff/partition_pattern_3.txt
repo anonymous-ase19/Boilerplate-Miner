@@ -1,0 +1,12 @@
+Cluster 0
+ libgdx_____libgdx_____TiledMapPacker
+ hazelcast_____hazelcast_____ConfigXmlGenerator
+ h2oai_____h2o-3_____XMLTestReporter
+ alibaba_____fastjson_____MiscCodec
+ looly_____hutool_____XmlUtil
+ deeplearning4j_____deeplearning4j_____Configuration
+
+Cluster 1
+ elastic_____elasticsearch_____SamlUtils
+ jenkinsci_____jenkins_____XMLUtils
+

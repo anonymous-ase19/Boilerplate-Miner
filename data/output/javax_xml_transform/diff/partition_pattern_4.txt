@@ -1,0 +1,13 @@
+Cluster 0
+ libgdx_____libgdx_____TiledMapPacker
+ jenkinsci_____jenkins_____XMLUtils
+ orhanobut_____logger_____LoggerPrinter
+ deeplearning4j_____deeplearning4j_____Configuration
+ looly_____hutool_____XmlUtil
+ apache_____jmeter_____XPathUtil
+ hazelcast_____hazelcast_____ConfigXmlGenerator
+ jenkinsci_____jenkins_____IconTest
+ alibaba_____fastjson_____MiscCodec
+ antlr_____antlr4_____BaseCSharpTest
+ mikepenz_____Android-Iconics_____StringFieldsGenerator
+

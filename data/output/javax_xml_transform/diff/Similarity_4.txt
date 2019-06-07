@@ -1,0 +1,290 @@
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.transform]
+
+libgdx_____libgdx_____TiledMapPacker
+jenkinsci_____jenkins_____XMLUtils
+0.004087
+14239, 15508, 58, 9533, 9902, 5
+
+libgdx_____libgdx_____TiledMapPacker
+orhanobut_____logger_____LoggerPrinter
+0.008230
+14239, 15508, 58, 3200, 3759, 21
+
+libgdx_____libgdx_____TiledMapPacker
+deeplearning4j_____deeplearning4j_____Configuration
+0.004517
+14239, 15508, 58, 46259, 47834, 47
+
+libgdx_____libgdx_____TiledMapPacker
+looly_____hutool_____XmlUtil
+0.008230
+14239, 15508, 58, 8375, 8843, 18
+
+libgdx_____libgdx_____TiledMapPacker
+apache_____jmeter_____XPathUtil
+0.009095
+14239, 15508, 58, 12953, 13280, 15
+
+libgdx_____libgdx_____TiledMapPacker
+hazelcast_____hazelcast_____ConfigXmlGenerator
+0.004992
+14239, 15508, 58, 65296, 67320, 49
+
+libgdx_____libgdx_____TiledMapPacker
+jenkinsci_____jenkins_____IconTest
+0.007447
+14239, 15508, 58, 6273, 6530, 11
+
+libgdx_____libgdx_____TiledMapPacker
+alibaba_____fastjson_____MiscCodec
+0.013569
+14239, 15508, 58, 6586, 7100, 18
+
+libgdx_____libgdx_____TiledMapPacker
+antlr_____antlr4_____BaseCSharpTest
+0.000676
+14239, 15508, 58, 13903, 16438, 74
+
+libgdx_____libgdx_____TiledMapPacker
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+0.002479
+14239, 15508, 58, 3333, 5199, 50
+
+alibaba_____fastjson_____MiscCodec
+jenkinsci_____jenkins_____XMLUtils
+0.223130
+6586, 7100, 18, 9533, 9902, 5
+
+alibaba_____fastjson_____MiscCodec
+orhanobut_____logger_____LoggerPrinter
+0.272532
+6586, 7100, 18, 3200, 3759, 21
+
+alibaba_____fastjson_____MiscCodec
+hazelcast_____hazelcast_____ConfigXmlGenerator
+0.020242
+6586, 7100, 18, 65296, 67320, 49
+
+alibaba_____fastjson_____MiscCodec
+looly_____hutool_____XmlUtil
+0.301194
+6586, 7100, 18, 8375, 8843, 18
+
+alibaba_____fastjson_____MiscCodec
+jenkinsci_____jenkins_____IconTest
+0.332871
+6586, 7100, 18, 6273, 6530, 11
+
+alibaba_____fastjson_____MiscCodec
+apache_____jmeter_____XPathUtil
+0.449329
+6586, 7100, 18, 12953, 13280, 15
+
+alibaba_____fastjson_____MiscCodec
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+0.012277
+6586, 7100, 18, 3333, 5199, 50
+
+alibaba_____fastjson_____MiscCodec
+antlr_____antlr4_____BaseCSharpTest
+0.001360
+6586, 7100, 18, 13903, 16438, 74
+
+alibaba_____fastjson_____MiscCodec
+deeplearning4j_____deeplearning4j_____Configuration
+0.027324
+6586, 7100, 18, 46259, 47834, 47
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+jenkinsci_____jenkins_____IconTest
+0.014996
+3333, 5199, 50, 6273, 6530, 11
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+jenkinsci_____jenkins_____XMLUtils
+0.010052
+3333, 5199, 50, 9533, 9902, 5
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+orhanobut_____logger_____LoggerPrinter
+0.011109
+3333, 5199, 50, 3200, 3759, 21
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+deeplearning4j_____deeplearning4j_____Configuration
+0.006738
+3333, 5199, 50, 46259, 47834, 47
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+antlr_____antlr4_____BaseCSharpTest
+0.001008
+3333, 5199, 50, 13903, 16438, 74
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+hazelcast_____hazelcast_____ConfigXmlGenerator
+0.003698
+3333, 5199, 50, 65296, 67320, 49
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+looly_____hutool_____XmlUtil
+0.013569
+3333, 5199, 50, 8375, 8843, 18
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+apache_____jmeter_____XPathUtil
+0.010052
+3333, 5199, 50, 12953, 13280, 15
+
+deeplearning4j_____deeplearning4j_____Configuration
+jenkinsci_____jenkins_____IconTest
+0.016573
+46259, 47834, 47, 6273, 6530, 11
+
+deeplearning4j_____deeplearning4j_____Configuration
+jenkinsci_____jenkins_____XMLUtils
+0.013569
+46259, 47834, 47, 9533, 9902, 5
+
+deeplearning4j_____deeplearning4j_____Configuration
+hazelcast_____hazelcast_____ConfigXmlGenerator
+0.003698
+46259, 47834, 47, 65296, 67320, 49
+
+deeplearning4j_____deeplearning4j_____Configuration
+apache_____jmeter_____XPathUtil
+0.024724
+46259, 47834, 47, 12953, 13280, 15
+
+deeplearning4j_____deeplearning4j_____Configuration
+antlr_____antlr4_____BaseCSharpTest
+0.001836
+46259, 47834, 47, 13903, 16438, 74
+
+deeplearning4j_____deeplearning4j_____Configuration
+looly_____hutool_____XmlUtil
+0.022371
+46259, 47834, 47, 8375, 8843, 18
+
+deeplearning4j_____deeplearning4j_____Configuration
+orhanobut_____logger_____LoggerPrinter
+0.016573
+46259, 47834, 47, 3200, 3759, 21
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+jenkinsci_____jenkins_____XMLUtils
+0.011109
+65296, 67320, 49, 9533, 9902, 5
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+orhanobut_____logger_____LoggerPrinter
+0.049787
+65296, 67320, 49, 3200, 3759, 21
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+jenkinsci_____jenkins_____IconTest
+0.014996
+65296, 67320, 49, 6273, 6530, 11
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+apache_____jmeter_____XPathUtil
+0.016573
+65296, 67320, 49, 12953, 13280, 15
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+looly_____hutool_____XmlUtil
+0.016573
+65296, 67320, 49, 8375, 8843, 18
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+antlr_____antlr4_____BaseCSharpTest
+0.001114
+65296, 67320, 49, 13903, 16438, 74
+
+jenkinsci_____jenkins_____IconTest
+orhanobut_____logger_____LoggerPrinter
+0.223130
+6273, 6530, 11, 3200, 3759, 21
+
+jenkinsci_____jenkins_____IconTest
+jenkinsci_____jenkins_____XMLUtils
+0.449329
+6273, 6530, 11, 9533, 9902, 5
+
+jenkinsci_____jenkins_____IconTest
+apache_____jmeter_____XPathUtil
+0.406570
+6273, 6530, 11, 12953, 13280, 15
+
+jenkinsci_____jenkins_____IconTest
+antlr_____antlr4_____BaseCSharpTest
+0.001503
+6273, 6530, 11, 13903, 16438, 74
+
+jenkinsci_____jenkins_____IconTest
+looly_____hutool_____XmlUtil
+0.201897
+6273, 6530, 11, 8375, 8843, 18
+
+jenkinsci_____jenkins_____XMLUtils
+looly_____hutool_____XmlUtil
+0.223130
+9533, 9902, 5, 8375, 8843, 18
+
+jenkinsci_____jenkins_____XMLUtils
+apache_____jmeter_____XPathUtil
+0.301194
+9533, 9902, 5, 12953, 13280, 15
+
+jenkinsci_____jenkins_____XMLUtils
+antlr_____antlr4_____BaseCSharpTest
+0.000912
+9533, 9902, 5, 13903, 16438, 74
+
+jenkinsci_____jenkins_____XMLUtils
+orhanobut_____logger_____LoggerPrinter
+0.165299
+9533, 9902, 5, 3200, 3759, 21
+
+orhanobut_____logger_____LoggerPrinter
+looly_____hutool_____XmlUtil
+0.135335
+3200, 3759, 21, 8375, 8843, 18
+
+orhanobut_____logger_____LoggerPrinter
+apache_____jmeter_____XPathUtil
+0.223130
+3200, 3759, 21, 12953, 13280, 15
+
+orhanobut_____logger_____LoggerPrinter
+antlr_____antlr4_____BaseCSharpTest
+0.001503
+3200, 3759, 21, 13903, 16438, 74
+
+antlr_____antlr4_____BaseCSharpTest
+looly_____hutool_____XmlUtil
+0.001231
+13903, 16438, 74, 8375, 8843, 18
+
+antlr_____antlr4_____BaseCSharpTest
+apache_____jmeter_____XPathUtil
+0.002029
+13903, 16438, 74, 12953, 13280, 15
+
+looly_____hutool_____XmlUtil
+apache_____jmeter_____XPathUtil
+0.301194
+8375, 8843, 18, 12953, 13280, 15
+
+File Index Table
+
+0 	 libgdx_____libgdx_____TiledMapPacker 
+1 	 alibaba_____fastjson_____MiscCodec 
+2 	 mikepenz_____Android-Iconics_____StringFieldsGenerator 
+3 	 deeplearning4j_____deeplearning4j_____Configuration 
+4 	 hazelcast_____hazelcast_____ConfigXmlGenerator 
+5 	 jenkinsci_____jenkins_____IconTest 
+6 	 jenkinsci_____jenkins_____XMLUtils 
+7 	 orhanobut_____logger_____LoggerPrinter 
+8 	 antlr_____antlr4_____BaseCSharpTest 
+9 	 looly_____hutool_____XmlUtil 
+10 	 apache_____jmeter_____XPathUtil 

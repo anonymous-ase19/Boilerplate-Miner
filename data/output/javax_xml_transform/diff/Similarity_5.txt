@@ -1,0 +1,152 @@
+[javax.xml.transform.Transformer.setOutputProperty]
+
+elastic_____elasticsearch_____SamlUtils
+antlr_____antlr4_____BaseCSharpTest
+0.045049
+7156, 7247, 5, 13911, 16357, 34
+
+elastic_____elasticsearch_____SamlUtils
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+0.055023
+7156, 7247, 5, 3333, 5199, 33
+
+elastic_____elasticsearch_____SamlUtils
+orhanobut_____logger_____LoggerPrinter
+0.149569
+7156, 7247, 5, 3200, 3759, 21
+
+elastic_____elasticsearch_____SamlUtils
+apache_____jmeter_____XPathUtil
+0.301194
+7156, 7247, 5, 12953, 13280, 15
+
+elastic_____elasticsearch_____SamlUtils
+looly_____hutool_____XmlUtil
+0.904837
+7156, 7247, 5, 8595, 8697, 6
+
+elastic_____elasticsearch_____SamlUtils
+hazelcast_____hazelcast_____ConfigXmlGenerator
+0.406570
+7156, 7247, 5, 66632, 66987, 13
+
+elastic_____elasticsearch_____SamlUtils
+h2oai_____h2o-3_____XMLTestReporter
+0.110803
+7156, 7247, 5, 1839, 2633, 26
+
+h2oai_____h2o-3_____XMLTestReporter
+antlr_____antlr4_____BaseCSharpTest
+0.027324
+1839, 2633, 26, 13911, 16357, 34
+
+h2oai_____h2o-3_____XMLTestReporter
+apache_____jmeter_____XPathUtil
+0.122456
+1839, 2633, 26, 12953, 13280, 15
+
+h2oai_____h2o-3_____XMLTestReporter
+looly_____hutool_____XmlUtil
+0.110803
+1839, 2633, 26, 8595, 8697, 6
+
+h2oai_____h2o-3_____XMLTestReporter
+hazelcast_____hazelcast_____ConfigXmlGenerator
+0.090718
+1839, 2633, 26, 66632, 66987, 13
+
+h2oai_____h2o-3_____XMLTestReporter
+orhanobut_____logger_____LoggerPrinter
+0.090718
+1839, 2633, 26, 3200, 3759, 21
+
+h2oai_____h2o-3_____XMLTestReporter
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+0.040762
+1839, 2633, 26, 3333, 5199, 33
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+antlr_____antlr4_____BaseCSharpTest
+0.049787
+3333, 5199, 33, 13911, 16357, 34
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+apache_____jmeter_____XPathUtil
+0.049787
+3333, 5199, 33, 12953, 13280, 15
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+orhanobut_____logger_____LoggerPrinter
+0.055023
+3333, 5199, 33, 3200, 3759, 21
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+looly_____hutool_____XmlUtil
+0.055023
+3333, 5199, 33, 8595, 8697, 6
+
+mikepenz_____Android-Iconics_____StringFieldsGenerator
+hazelcast_____hazelcast_____ConfigXmlGenerator
+0.060810
+3333, 5199, 33, 66632, 66987, 13
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+antlr_____antlr4_____BaseCSharpTest
+0.036883
+66632, 66987, 13, 13911, 16357, 34
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+looly_____hutool_____XmlUtil
+0.406570
+66632, 66987, 13, 8595, 8697, 6
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+apache_____jmeter_____XPathUtil
+0.272532
+66632, 66987, 13, 12953, 13280, 15
+
+hazelcast_____hazelcast_____ConfigXmlGenerator
+orhanobut_____logger_____LoggerPrinter
+0.122456
+66632, 66987, 13, 3200, 3759, 21
+
+orhanobut_____logger_____LoggerPrinter
+looly_____hutool_____XmlUtil
+0.149569
+3200, 3759, 21, 8452, 8839, 17
+
+orhanobut_____logger_____LoggerPrinter
+apache_____jmeter_____XPathUtil
+0.223130
+3200, 3759, 21, 12953, 13280, 15
+
+orhanobut_____logger_____LoggerPrinter
+antlr_____antlr4_____BaseCSharpTest
+0.030197
+3200, 3759, 21, 13911, 16357, 34
+
+antlr_____antlr4_____BaseCSharpTest
+apache_____jmeter_____XPathUtil
+0.045049
+13911, 16357, 34, 12953, 13280, 15
+
+antlr_____antlr4_____BaseCSharpTest
+looly_____hutool_____XmlUtil
+0.045049
+13911, 16357, 34, 8595, 8697, 6
+
+looly_____hutool_____XmlUtil
+apache_____jmeter_____XPathUtil
+0.332871
+8452, 8839, 17, 12953, 13280, 15
+
+File Index Table
+
+0 	 elastic_____elasticsearch_____SamlUtils 
+1 	 h2oai_____h2o-3_____XMLTestReporter 
+2 	 mikepenz_____Android-Iconics_____StringFieldsGenerator 
+3 	 hazelcast_____hazelcast_____ConfigXmlGenerator 
+4 	 orhanobut_____logger_____LoggerPrinter 
+5 	 antlr_____antlr4_____BaseCSharpTest 
+6 	 looly_____hutool_____XmlUtil 
+7 	 apache_____jmeter_____XPathUtil 

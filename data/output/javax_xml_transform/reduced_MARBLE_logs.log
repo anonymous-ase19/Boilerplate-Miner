@@ -1,0 +1,292 @@
+========== INTERESTING SEQUENCE MINING ============
+ Time: 07.06.2019-14:31:18
+ Inputs: -f /var/folders/td/vcpk72955fv6hj5k_v107y6w0000gn/T/APICallDB5945377470259336691.txt -s 100000 -i 10000 -r 4320 Finished bulding priority queue. Size: 109
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 226
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 238
+ Number of eval calls: 13
+ Finished bulding priority queue. Size: 218
+ Number of eval calls: 5
+ Finished bulding priority queue. Size: 223
+ Number of eval calls: 9
+ Finished bulding priority queue. Size: 208
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 204
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 190
+ Number of eval calls: 17
+ Finished bulding priority queue. Size: 169
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 167
+ Number of eval calls: 4
+ Finished bulding priority queue. Size: 165
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 157
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 162
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 154
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 153
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 162
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 162
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 159
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 157
+ Number of eval calls: 14
+ Finished bulding priority queue. Size: 143
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 139
+ Number of eval calls: 6
+ Finished bulding priority queue. Size: 127
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 114
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 107
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 106
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 105
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 100
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 96
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 95
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 94
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 91
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 90
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 89
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 88
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 77
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 73
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 72
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 76
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 72
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 73
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 62
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 65
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 64
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 59
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 54
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 51
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 50
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 49
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 48
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 45
+ Number of eval calls: 9
+ Finished bulding priority queue. Size: 37
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 36
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 35
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 33
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 32
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 29
+ Number of eval calls: 7
+ Finished bulding priority queue. Size: 28
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 22
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 23
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 22
+ Number of eval calls: 2
+ Finished bulding priority queue. Size: 17
+ Number of eval calls: 3
+ Finished bulding priority queue. Size: 14
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 13
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 10
+ Number of eval calls: 5
+ Finished bulding priority queue. Size: 3
+ Number of eval calls: 1
+ Finished bulding priority queue. Size: 2
+
+ All possible candidates suggested. Exiting. 
+
+Elapsed time: 0.012183333333333332 minutes.
+
+======= Transaction Database =======
+0 -1 1 -1 2 -1 3 -1 4 -1 5 -1 6 -1 -2 0
+7 -1 -2 1
+0 -1 1 -1 2 -1 3 -1 4 -1 -2 2
+8 -1 2 -1 3 -1 4 -1 -2 3
+0 -1 9 -1 10 -1 10 -1 10 -1 1 -1 11 -1 -2 4
+7 -1 7 -1 -2 5
+7 -1 -2 6
+7 -1 3 -1 -2 7
+7 -1 -2 8
+0 -1 1 -1 8 -1 -2 9
+3 -1 2 -1 4 -1 -2 10
+7 -1 -2 11
+0 -1 8 -1 8 -1 8 -1 2 -1 3 -1 4 -1 -2 12
+7 -1 -2 13
+12 -1 -2 14
+7 -1 -2 15
+3 -1 -2 16
+2 -1 3 -1 0 -1 1 -1 4 -1 -2 17
+7 -1 -2 18
+7 -1 -2 19
+7 -1 3 -1 0 -1 10 -1 1 -1 8 -1 8 -1 8 -1 8 -1 4 -1 13 -1 13 -1 -2 20
+0 -1 2 -1 3 -1 4 -1 -2 21
+14 -1 0 -1 15 -1 16 -1 17 -1 18 -1 -2 22
+0 -1 9 -1 1 -1 4 -1 -2 23
+3 -1 19 -1 -2 24
+7 -1 -2 25
+3 -1 -2 26
+2 -1 -2 27
+20 -1 21 -1 22 -1 23 -1 -2 28
+2 -1 3 -1 0 -1 -2 29
+7 -1 -2 30
+7 -1 3 -1 0 -1 8 -1 8 -1 4 -1 13 -1 -2 31
+7 -1 -2 32
+0 -1 8 -1 2 -1 3 -1 4 -1 -2 33
+7 -1 3 -1 6 -1 -2 34
+7 -1 3 -1 -2 35
+16 -1 -2 36
+2 -1 -2 37
+7 -1 -2 38
+2 -1 3 -1 -2 39
+2 -1 3 -1 -2 40
+0 -1 1 -1 8 -1 8 -1 4 -1 -2 41
+0 -1 24 -1 0 -1 -2 42
+7 -1 -2 43
+7 -1 -2 44
+25 -1 -2 45
+7 -1 3 -1 -2 46
+7 -1 -2 47
+7 -1 -2 48
+7 -1 -2 49
+7 -1 -2 50
+7 -1 7 -1 2 -1 3 -1 0 -1 16 -1 26 -1 -2 51
+7 -1 -2 52
+7 -1 -2 53
+0 -1 8 -1 2 -1 3 -1 4 -1 27 -1 -2 54
+16 -1 -2 55
+6 -1 -2 56
+0 -1 8 -1 8 -1 16 -1 3 -1 4 -1 -2 57
+0 -1 2 -1 3 -1 -2 58
+20 -1 21 -1 22 -1 28 -1 -2 59
+
+
+============= INTERESTING SEQUENCES =============
+pattern 0 
+[javax.xml.transform.stream.StreamSource.<init>] 
+prob: 0.43333 	int: 0.92857 	count: 28 
+file: hazelcast_____hazelcast_____XmlClientConfigBuilderTest 	caller: com.hazelcast.client.config.XmlClientConfigBuilderTest.testXSDConfigXML(java.lang.String) 
+file: elastic_____elasticsearch_____SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.validate(java.io.InputStream,java.lang.String) 
+file: hazelcast_____hazelcast_____ClientDiscoverySpiTest 	caller: com.hazelcast.client.spi.impl.discovery.ClientDiscoverySpiTest.testSchema() 
+file: jenkinsci_____jenkins_____ItemGroupMixIn 	caller: hudson.model.ItemGroupMixIn.createProjectFromXML(java.lang.String,java.io.InputStream) 
+file: jenkinsci_____jenkins_____RunMapTest 	caller: hudson.model.RunMapTest.reloadWhileBuildIsInProgress() 
+file: hibernate_____hibernate-orm_____LocalSchemaLocator 	caller: org.hibernate.boot.jaxb.internal.stax.LocalSchemaLocator.resolveLocalSchema(java.net.URL) 
+file: Activiti_____Activiti_____BpmnXMLConverter 	caller: org.activiti.bpmn.converter.BpmnXMLConverter.validateModel(org.activiti.bpmn.converter.util.InputStreamProvider) 
+file: jenkinsci_____jenkins_____View 	caller: hudson.model.View.doConfigDotXml(org.kohsuke.stapler.StaplerRequest) 
+file: jenkinsci_____jenkins_____UpdateJobCommand 	caller: hudson.cli.UpdateJobCommand.run() 
+file: junit-team_____junit5_____XmlReportAssertions 	caller: org.junit.platform.console.tasks.XmlReportAssertions.assertValidAccordingToJenkinsSchema(java.lang.String) 
+file: hazelcast_____hazelcast_____ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci_____jenkins_____AbstractItem 	caller: hudson.model.AbstractItem.doConfigDotXml(org.kohsuke.stapler.StaplerRequest,org.kohsuke.stapler.StaplerResponse) 
+file: hibernate_____hibernate-orm_____LocalSchema 	caller: org.hibernate.boot.jaxb.internal.stax.LocalSchema.resolveLocalSchema(java.net.URL) 
+file: orhanobut_____logger_____LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+file: jenkinsci_____jenkins_____UpdateViewCommand 	caller: hudson.cli.UpdateViewCommand.run() 
+file: jenkinsci_____jenkins_____XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testSafeTransformDoesNotProcessForeignResources() 
+file: jenkinsci_____jenkins_____XMLUtilsTest 	caller: jenkins.xml.XMLUtilsTest.testUpdateByXmlIDoesNotFail() 
+file: hibernate_____hibernate-orm_____JaxbCfgProcessor 	caller: org.hibernate.boot.cfgxml.internal.JaxbCfgProcessor.resolveLocalSchema(java.lang.String,java.lang.String) 
+file: jenkinsci_____jenkins_____TriggerStartTest 	caller: hudson.triggers.TriggerStartTest.updateByXmlCallsStartTrue() 
+file: hazelcast_____hazelcast_____DiscoverySpiTest 	caller: com.hazelcast.spi.discovery.DiscoverySpiTest.testSchema() 
+file: spring-projects_____spring-boot_____SampleWsApplicationTests 	caller: sample.webservices.SampleWsApplicationTests.testSendingHolidayRequest() 
+file: hazelcast_____hazelcast_____XMLConfigBuilderTest 	caller: com.hazelcast.config.XMLConfigBuilderTest.testXSDConfigXML(java.lang.String) 
+file: jenkinsci_____jenkins_____AbstractItemSecurityTest 	caller: hudson.model.AbstractItemSecurityTest.testUpdateByXmlDoesNotProcessForeignResources() 
+file: jenkinsci_____jenkins_____AbstractItemSecurityTest 	caller: hudson.model.AbstractItemSecurityTest.testUpdateByXmlDoesNotFail() 
+file: hibernate_____hibernate-orm_____LocalXsdResolver 	caller: org.hibernate.boot.xsd.LocalXsdResolver.resolveLocalXsdSchema(java.lang.String) 
+file: hazelcast_____hazelcast_____AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: jenkinsci_____jenkins_____MavenTest 	caller: hudson.tasks.MavenTest.doPassBuildVariablesOptionally() 
+file: jenkinsci_____jenkins_____BuildDiscarderPropertyTest 	caller: jenkins.model.BuildDiscarderPropertyTest.logRotatorField() 
+
+pattern 1 
+[javax.xml.transform.dom.DOMSource.<init>, javax.xml.transform.stream.StreamResult.<init>] 
+prob: 0.21667 	int: 1.00000 	count: 13 
+file: libgdx_____libgdx_____TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: alibaba_____fastjson_____MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: elastic_____elasticsearch_____SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: mikepenz_____Android-Iconics_____StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: deeplearning4j_____deeplearning4j_____Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: jenkinsci_____jenkins_____IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: apereo_____cas_____SamlUtils 	caller: org.apereo.cas.support.saml.SamlUtils.transformSamlObject(org.apereo.cas.support.saml.OpenSamlConfigBean,org.opensaml.core.xml.XMLObject,boolean) 
+file: antlr_____antlr4_____BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: looly_____hutool_____XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.Writer,boolean) 
+file: looly_____hutool_____XmlUtil 	caller: cn.hutool.core.util.XmlUtil.write(org.w3c.dom.Node,java.io.OutputStream,java.lang.String,boolean) 
+file: hazelcast_____hazelcast_____AbstractXmlConfigHelper 	caller: com.hazelcast.config.AbstractXmlConfigHelper.schemaValidation(org.w3c.dom.Document) 
+file: apache_____jmeter_____XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apereo_____cas_____DefaultRelyingPartyTokenProducer 	caller: org.apereo.cas.ws.idp.services.DefaultRelyingPartyTokenProducer.serializeRelyingPartyToken(org.w3c.dom.Element) 
+
+pattern 3 
+[javax.xml.transform.TransformerFactory.newTransformer] 
+prob: 0.10000 	int: 0.75000 	count: 8 
+file: libgdx_____libgdx_____TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: alibaba_____fastjson_____MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: elastic_____elasticsearch_____SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.getHardenedXMLTransformer() 
+file: h2oai_____h2o-3_____XMLTestReporter 	caller: water.junit.XMLTestReporter.XMLTestReporter() 
+file: deeplearning4j_____deeplearning4j_____Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: hazelcast_____hazelcast_____ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci_____jenkins_____XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: looly_____hutool_____XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+
+pattern 4 
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.transform] 
+prob: 0.10000 	int: 0.50000 	count: 12 
+file: libgdx_____libgdx_____TiledMapPacker 	caller: com.badlogic.gdx.tiledmappacker.TiledMapPacker.writeUpdatedTMX(com.badlogic.gdx.maps.tiled.TiledMap,com.badlogic.gdx.files.FileHandle) 
+file: alibaba_____fastjson_____MiscCodec 	caller: com.alibaba.fastjson.serializer.MiscCodec.toString(UNRESOLVED.org.w3c.dom.Node) 
+file: mikepenz_____Android-Iconics_____StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: deeplearning4j_____deeplearning4j_____Configuration 	caller: org.datavec.api.conf.Configuration.writeXml(java.io.OutputStream) 
+file: hazelcast_____hazelcast_____ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: jenkinsci_____jenkins_____IconTest 	caller: lib.layout.IconTest.toString(com.gargoylesoftware.htmlunit.html.HtmlElement) 
+file: jenkinsci_____jenkins_____XMLUtils 	caller: jenkins.util.xml.XMLUtils._transform(javax.xml.transform.Source,javax.xml.transform.Result) 
+file: orhanobut_____logger_____LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+file: antlr_____antlr4_____BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: looly_____hutool_____XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: apache_____jmeter_____XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache_____jmeter_____XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+
+pattern 5 
+[javax.xml.transform.Transformer.setOutputProperty] 
+prob: 0.08333 	int: 0.55556 	count: 9 
+file: elastic_____elasticsearch_____SamlUtils 	caller: org.elasticsearch.xpack.security.authc.saml.SamlUtils.print(org.w3c.dom.Element,java.io.Writer,boolean) 
+file: h2oai_____h2o-3_____XMLTestReporter 	caller: water.junit.XMLTestReporter.XMLTestReporter() 
+file: mikepenz_____Android-Iconics_____StringFieldsGenerator 	caller: .StringFieldsGenerator.generate(com.mikepenz.iconics.typeface.ITypeface) 
+file: hazelcast_____hazelcast_____ConfigXmlGenerator 	caller: com.hazelcast.config.ConfigXmlGenerator.format(java.lang.String,int) 
+file: orhanobut_____logger_____LoggerPrinter 	caller: com.orhanobut.logger.LoggerPrinter.xml(java.lang.String) 
+file: antlr_____antlr4_____BaseCSharpTest 	caller: org.antlr.v4.test.runtime.csharp.BaseCSharpTest.createProject() 
+file: looly_____hutool_____XmlUtil 	caller: cn.hutool.core.util.XmlUtil.transform(javax.xml.transform.Source,javax.xml.transform.Result,java.lang.String,boolean) 
+file: apache_____jmeter_____XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.getNodeContent(org.w3c.dom.Node) 
+file: apache_____jmeter_____XPathUtil 	caller: org.apache.jmeter.util.XPathUtil.formatXml(java.lang.String) 
+
