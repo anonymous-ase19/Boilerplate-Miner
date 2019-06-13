@@ -40,19 +40,52 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+     <plugin>
+         <artifactId>maven-assembly-plugin</artifactId>
+         <executions>
+             <execution>
+                 <id>build-a</id>
+                 <configuration>
+                     <archive>
+                         <manifest>
+                             <mainClass>apimining.java.APICallExtractor</mainClass>
+                         </manifest>
+                     </archive>
+                     <descriptorRefs>
+                         <descriptorRef>jar-with-dependencies</descriptorRef>
+                     </descriptorRefs>
+                     <finalName>APIExtractor.jar</finalName>
+                 </configuration>
+             </execution>
+             <execution>
+                 <id>build-b</id>
+                 <configuration>
+                     <archive>
+                         <manifest>
+                             <mainClass>apimining.pam.main.PAM</mainClass>
+                         </manifest>
+                     </archive>
+                     <descriptorRefs>
+                         <descriptorRef>jar-with-dependencies</descriptorRef>
+                     </descriptorRefs>
+                     <finalName>PAM.jar</finalName>
+                 </configuration>
+             </execution>
+         </executions>
+     </plugin>
      </plugins>
   </build>
   
   <!-- Maven Repository on GitHub -->
   <repositories>
-      <repository>
-          <id>maven-repo</id>
-          <url>https://github.com/mast-group/maven-repo/raw/master/repository/</url>
-      </repository>
+<!--      <repository>-->
+<!--          <id>maven-repo</id>-->
+<!--          <url>https://github.com/mast-group/maven-repo/raw/master/repository/</url>-->
+<!--      </repository>-->
         <repository>
 	    <id>project.local</id>
 	    <name>project</name>
-	    <url>file:${project.basedir}/repo</url>
+	    <url>file:${project.basedir}/lib</url>
 	  </repository>
   </repositories>
   
@@ -67,16 +100,16 @@
 	    <artifactId>spoon-core</artifactId>
 	    <version>7.2.0</version>
 	</dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>codemining</groupId>
       <artifactId>codemining-utils</artifactId>
-      <version>1.1-SNAPSHOT</version>
+      <version>1.0</version>
      </dependency>
      <dependency>
       <groupId>codemining</groupId>
       <artifactId>codemining-core</artifactId>
-      <version>1.1-SNAPSHOT</version>
-     </dependency>
+      <version>1.0</version>
+     </dependency> -->
      <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>

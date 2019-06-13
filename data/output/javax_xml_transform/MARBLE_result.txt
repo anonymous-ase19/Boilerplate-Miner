@@ -17,21 +17,21 @@ num nodes: 12
 num partition of 90%: 1
 
 data/output/javax_xml_transform/diff/pattern_3.edgelist
+[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.transform]
+
+num alive partition: 1
+num alive nodes: 7
+num partition: 2
+num nodes: 11
+num partition of 90%: 0
+
+data/output/javax_xml_transform/diff/pattern_4.edgelist
 [javax.xml.transform.TransformerFactory.newTransformer]
 
 num alive partition: 1
 num alive nodes: 6
 num partition: 2
 num nodes: 8
-num partition of 90%: 0
-
-data/output/javax_xml_transform/diff/pattern_4.edgelist
-[javax.xml.transform.TransformerFactory.newInstance, javax.xml.transform.Transformer.transform]
-
-num alive partition: 1
-num alive nodes: 11
-num partition: 1
-num nodes: 11
 num partition of 90%: 0
 
 data/output/javax_xml_transform/diff/pattern_5.edgelist

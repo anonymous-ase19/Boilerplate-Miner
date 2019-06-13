@@ -3,13 +3,13 @@ MARBLE: Mining for Boilerplate Code to Identify API Usability Problems
 MARBLE (Mining API Repositories for Boilerplate Lessening Effort) is an automated technique for identifying instances of boilerplate API client code. MARBLE adapts existing techniques, including an API usage mining algorithm, an AST comparison algorithm, and a graph partitioning algorithm.
 
 Further documentations for the source code and scripts to run end-to-end mining will be available soon. 
-Currently, runnables for MARBLE are available for use.
+Currently, runnables for MARBLE are available for use, and you can find them under ```runnables/``` or release tab. Example client code files and intermediate results for ```javax.xml.transform``` mining are available under ```data/```.
 
 Quickstart with Runnables 
 ------------
 
 #### Step 0: Collecting Client Code
-This step collects client code files of target APIs from large repository. It takes a number of java projects and a list of target API names as input, ```api_list.txt```:
+This step collects client code files of target APIs from large repository. Before this step, place GitHub (or other) projects into one directory (e.g., data/repos in the example). Then, ```generateCorpora.py``` only find client java files importing target APIs in ```api_list.txt``` such as:
 ```
 javax.xml.transform
 javax.swing.JFrame
@@ -29,7 +29,7 @@ $ python3 generateCorpora.py -i data/repos/ -o data/source/ -p 8 -a data/api_lis
 #### Step 1: Extracting API Calls
 This step is to extract API calls from the set of client code files using the target API, such as ```javax.xml.transform```. (We adjusted [PAM's public implementation](https://github.com/mast-group/api-mining))
 ```
-$ java -jar APICallExtractor.jar -lf data/source/ -of data/calls/ -pn javax.xml.transform -sn 123
+$ java -jar runnables/APICallExtractor.jar -sd data/source/ -od data/calls/ -pn javax.xml.transform -sn 123
 ```
 * **-sd**  &nbsp;  Client code source directory (output directory of Step 0)
 * **-od**  &nbsp;  Output directory
@@ -46,7 +46,7 @@ It will return ```javax_xml_transform.arff``` which contains data about 1) calle
 #### Step 2: Frequent API Usage Mining
 This step runs PAM (Probabilistic API Miner) to mine interesting API patterns from the list of API call sequences (We adjusted [PAM's public implementation](https://github.com/mast-group/api-mining)). It returns two files, ```PAM_seqs.txt``` and ```MARBLE_logs.log```. ```PAM_seqs.txt``` is the result file of PAM containing a list of usage patterns (i.e., sequences of API calls), and ```MARBLE_logs.log``` has richer information about the usgae patterns, which will be used in the following steps.
 ```
-$ java -jar pam.jar -f data/calls/javax_xml_transform.arff -sd data/source/ -o data/output/
+$ java -jar runnables/PAM.jar -f data/calls/javax_xml_transform.arff -sd data/source/ -od data/output/
 ```
 * **-f**  &nbsp;  arff file from API extraction (output file from Step 1)
 * **-sd**  &nbsp;  Source directory
@@ -64,7 +64,7 @@ $ python filterSpuriousPatterns.py -i data/output/javax_xml_transform/MARBLE_log
 #### Step 4: AST Comparision
 This step compares ASTs around API usage patterns to consider the structural context. It returns  structural similarity scores between all pairs of client code files for each API usage pattern.
 ```
-$ java -jar ASTComparison.jar -f data/output/javax_xml_transform/reduced_MARBLE_logs.log -sd data/source/javax_xml_transform/ -o data/output/javax_xml_transform/diff/ -ps 0 -pl 6 -p 2
+$ java -jar runnables/ASTComparison.jar -f data/output/javax_xml_transform/reduced_MARBLE_logs.log -sd data/source/javax_xml_transform/ -od data/output/javax_xml_transform/diff/ -ps 0 -pl 6 -p 2
 ```
 * **-f**  &nbsp;  PAM log file after removing spurious patterns (from step 3)
 * **-sd**  &nbsp;  Client code source directory
